@@ -1,0 +1,14 @@
+{
+  "id": "EVD-JERUSALEM-TEMPLE70-001",
+  "claim_id": "CLM-JERUSALEM-TEMPLE70-001",
+  "relation": "supports",
+  "evidence_type": "textual",
+  "summary": "Josephus's Jewish War Book VI describes the Temple being set on fire during the Roman assault and the holy house being burned down.",
+  "source_refs": [
+    "SRC-JERUSALEM-JOSEPHUS-WAR-VI"
+  ],
+  "confidence": 0.98,
+  "limitations": [
+    "Josephus is close to the events but remains one historically situated author with his own interpretive framing."
+  ]
+}

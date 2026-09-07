@@ -8,7 +8,7 @@
 
 A provenance-first **Historical & Event Intelligence** repository for tracing real-world events, material evidence, documentary attestation, uncertainty, and their possible relationship to later narratives.
 
-**ROCKSOUL RESEARCH · STORY × EVENT × PERSON**
+**ROCKSOUL RESEARCH · STORY × EVENT × PERSON × TEXT**
 
 </div>
 
@@ -64,21 +64,41 @@ POSSIBLE NARRATIVE CONNECTION
 What was told?          → MFTL
 What happened?          → LEGEND
 Who was involved?       → SUPERHERO
+What does the text say? → RGBL
 ```
 
 Shared primitives such as sources, claims, evidence, places, artifacts, and relationships remain interoperable concepts rather than separate repositories.
 
 SUPERHERO now provides the human-agency side of the graph. For example, `PER-COL-JUAN-RODRIGUEZ-FREYLE` links the Guatavita event to a later colonial recorder/transmission chain without changing LEGEND's ownership of the event itself.
 
+## Four-way proof case
+
+### **CASE 001 — JERUSALEM 70 CE**
+
+```text
+RGBL TEXT: Mark 13:2
+        ↓
+MFTL STORY: temple-destruction prediction
+        ↓
+LEGEND EVENT: Jerusalem / Second Temple, 70 CE
+        ↑
+SUPERHERO PERSON: Flavius Josephus
+```
+
+LEGEND contributes only the independently evidenced **historical event**. It does not convert textual correspondence into a theological-fulfillment verdict.
+
+[Read the shared case →](docs/cases/JERUSALEM-70-TEMPLE.md)
+
 ## v0.1 maturity
 
-LEGEND is intentionally small, but the core EVENT model has now been tested across three different evidence patterns:
+LEGEND is intentionally small, but the core EVENT model has now been tested across four different evidence patterns:
 
 | Case | Event class | Evidence pattern | Result |
 |---|---|---|---|
 | **Guatavita** | ritual event | archaeology + artifact + colonial text | canonical, with explicit counterevidence |
 | **Krakatau 1883** | natural disaster | geology + tsunami + modern institutional record | canonical |
 | **Halley 1066** | astronomical event | astronomy + museum/documentary record | canonical |
+| **Jerusalem 70 CE** | war/conflict | near-contemporary history + museum synthesis + text comparison | canonical, four-way integration |
 
 The validator checks both **JSON shape** and **semantic graph references**. Missing local sources, claims, evidence, places, artifacts, or broken local relationship endpoints fail CI.
 
@@ -111,13 +131,13 @@ SMALL-SCALE RITUAL OFFERINGS        strongly supported
 Current canonical graph:
 
 ```text
-3 events
-3 places
+4 events
+4 places
 1 artifact
-11 sources
-15 claims
-17 evidence edges
-2 relationships
+15 sources
+19 claims
+21 evidence edges
+4 relationships
 ```
 
 The most important result is not a yes/no verdict: **archaeology supports ritual offering activity, while the spectacular investiture narrative remains separately modeled as disputed.**

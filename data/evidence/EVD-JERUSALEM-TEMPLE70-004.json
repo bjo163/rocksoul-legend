@@ -1,0 +1,15 @@
+{
+  "id": "EVD-JERUSALEM-TEMPLE70-004",
+  "claim_id": "CLM-JERUSALEM-TEMPLE70-004",
+  "relation": "contextualizes",
+  "evidence_type": "textual",
+  "summary": "RGBL verifies the exact Mark 13:2 passage identities, while Cambridge scholarship documents the chronology debate around Mark and the 70 CE destruction.",
+  "source_refs": [
+    "SRC-JERUSALEM-RGBL-MARK-13-2",
+    "SRC-JERUSALEM-CAMBRIDGE-MARK-DATE"
+  ],
+  "confidence": 0.94,
+  "limitations": [
+    "Textual correspondence and chronology debate do not themselves resolve historical attribution or supernatural fulfillment."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "CLM-JERUSALEM-TEMPLE70-003",
+  "subject_id": "EVT-JERUSALEM-SECOND-TEMPLE-DESTRUCTION-70",
+  "statement": "Josephus provides near-contemporary textual attestation of the Temple fire and destruction and is independently identified as a critical ancient source for the period.",
+  "claim_type": "actor",
+  "epistemic_status": "strongly_supported",
+  "source_refs": [
+    "SRC-JERUSALEM-JOSEPHUS-WAR-VI",
+    "SRC-JERUSALEM-MET-WORLD-BETWEEN-EMPIRES"
+  ],
+  "notes": [
+    "Witness/participant proximity does not equal perfect neutrality."
+  ]
+}

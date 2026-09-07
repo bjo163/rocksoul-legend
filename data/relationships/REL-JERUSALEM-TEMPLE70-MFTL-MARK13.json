@@ -1,0 +1,14 @@
+{
+  "id": "REL-JERUSALEM-TEMPLE70-MFTL-MARK13",
+  "subject_id": "EVT-JERUSALEM-SECOND-TEMPLE-DESTRUCTION-70",
+  "relation": "associated_with",
+  "object_id": "MYTH-JERUSALEM-TEMPLE-DESTRUCTION-PROPHECY-000001",
+  "status": "supported",
+  "confidence": 0.96,
+  "source_refs": [
+    "SRC-JERUSALEM-RGBL-MARK-13-2",
+    "SRC-JERUSALEM-CAMBRIDGE-MARK-DATE",
+    "SRC-JERUSALEM-MET-WORLD-BETWEEN-EMPIRES"
+  ],
+  "note": "Cross-repository narrative association. Correlation of subject matter is not a theological fulfillment verdict."
+}

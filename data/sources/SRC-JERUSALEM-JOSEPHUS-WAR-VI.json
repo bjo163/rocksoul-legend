@@ -1,0 +1,15 @@
+{
+  "id": "SRC-JERUSALEM-JOSEPHUS-WAR-VI",
+  "title": "The Jewish War — Book VI",
+  "source_type": "early_historical_source",
+  "creator": "Flavius Josephus",
+  "date": "ca. 75 CE work; Perseus English translation 1895",
+  "language": "English translation / Ancient Greek work",
+  "locator": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0148%3Abook%3D6%3Awhiston+chapter%3D4",
+  "provenance": "Perseus Digital Library edition of Josephus, Jewish War Book VI, preserving the account of the Temple fire and destruction.",
+  "quality": "primary",
+  "notes": [
+    "Near-contemporary first-century historical source by an author who states he was present during later phases of the war.",
+    "Josephus's proximity is valuable but does not make his interpretation, motives, or portrayal of Titus automatically neutral."
+  ]
+}

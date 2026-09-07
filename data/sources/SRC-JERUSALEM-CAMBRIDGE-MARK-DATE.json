@@ -1,0 +1,15 @@
+{
+  "id": "SRC-JERUSALEM-CAMBRIDGE-MARK-DATE",
+  "title": "The Date of the Markan Gospel",
+  "source_type": "peer_reviewed_scholarship",
+  "creator": "S. G. F. Brandon",
+  "date": "1961",
+  "language": "English",
+  "locator": "https://www.cambridge.org/core/journals/new-testament-studies/article/abs/date-of-the-markan-gospel/B34650230D991C2B56A96866131DC994",
+  "provenance": "New Testament Studies article discussing the common 65–75 CE dating range and the 70 CE destruction as a central chronology problem.",
+  "quality": "high",
+  "notes": [
+    "Used to prevent LEGEND from silently assuming that Mark 13:2 is independently established as a pre-70 composition.",
+    "The exact date of Mark remains a scholarly question."
+  ]
+}

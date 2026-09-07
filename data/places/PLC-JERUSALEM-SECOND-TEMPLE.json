@@ -1,0 +1,28 @@
+{
+  "id": "PLC-JERUSALEM-SECOND-TEMPLE",
+  "name": "Jerusalem — Second Temple precinct",
+  "place_type": "site",
+  "country": "Roman Empire",
+  "region": "Judaea / Jerusalem",
+  "historical_names": [
+    "Jerusalem",
+    "Hierosolyma"
+  ],
+  "modern_names": [
+    "Jerusalem / Temple Mount area"
+  ],
+  "coordinates": {
+    "lat": 31.778,
+    "lon": 35.235,
+    "precision": "approximate"
+  },
+  "summary": "Historical Jerusalem site context for the Roman siege and destruction of the Second Temple in 70 CE. The coordinates are approximate and identify the Temple Mount/Second Temple precinct area rather than a surviving intact Second Temple structure.",
+  "source_refs": [
+    "SRC-JERUSALEM-JOSEPHUS-WAR-VI",
+    "SRC-JERUSALEM-MET-WORLD-BETWEEN-EMPIRES"
+  ],
+  "uncertainty": [
+    "The Second Temple complex no longer survives as an intact structure; modern site mapping represents the historical precinct approximately.",
+    "Modern political sovereignty is intentionally not encoded into this historical event record."
+  ]
+}

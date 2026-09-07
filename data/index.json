@@ -1,13 +1,13 @@
 {
   "schema_version": "0.1",
   "counts": {
-    "canonical_events": 3,
+    "canonical_events": 4,
     "candidates": 0,
-    "sources": 11,
-    "claims": 15,
-    "evidence_edges": 17,
-    "relationships": 2,
-    "places": 3,
+    "sources": 15,
+    "claims": 19,
+    "evidence_edges": 21,
+    "relationships": 4,
+    "places": 4,
     "artifacts": 1,
     "event_types": 15
   }

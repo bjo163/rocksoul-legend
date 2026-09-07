@@ -1,0 +1,81 @@
+{
+  "id": "EVT-JERUSALEM-SECOND-TEMPLE-DESTRUCTION-70",
+  "title": "Roman destruction of Jerusalem and the Second Temple, 70 CE",
+  "event_type": "war_conflict",
+  "aliases": [
+    "Destruction of the Second Temple",
+    "Siege and sack of Jerusalem, 70 CE",
+    "Fall of Jerusalem, 70 CE"
+  ],
+  "summary": "During the First Jewish–Roman War, Roman forces under Titus besieged and captured Jerusalem in 70 CE. Near-contemporary testimony from Josephus describes the Temple being consumed by fire, while modern museum scholarship independently treats the siege, sack of the city, and destruction of the Temple as a major historical event. LEGEND owns the event historicity; it does not infer from the event alone that any scriptural prediction was supernaturally fulfilled.",
+  "time": {
+    "start": "70 CE",
+    "end": "70 CE",
+    "precision": "year",
+    "calendar": null,
+    "note": "LEGEND intentionally uses year-level precision for the canonical event. Ancient calendrical/day details in Josephus are source claims and need not be forced into one modern exact date here."
+  },
+  "place_refs": [
+    "PLC-JERUSALEM-SECOND-TEMPLE"
+  ],
+  "artifact_refs": [],
+  "historicity": {
+    "status": "strongly_supported",
+    "confidence": 0.99,
+    "note": "Confidence applies to the Roman siege/capture and destruction of the Second Temple in 70 CE, not to theological interpretations of the event."
+  },
+  "claims": [
+    "CLM-JERUSALEM-TEMPLE70-001",
+    "CLM-JERUSALEM-TEMPLE70-002",
+    "CLM-JERUSALEM-TEMPLE70-003",
+    "CLM-JERUSALEM-TEMPLE70-004"
+  ],
+  "source_refs": [
+    "SRC-JERUSALEM-JOSEPHUS-WAR-VI",
+    "SRC-JERUSALEM-MET-WORLD-BETWEEN-EMPIRES",
+    "SRC-JERUSALEM-RGBL-MARK-13-2",
+    "SRC-JERUSALEM-CAMBRIDGE-MARK-DATE"
+  ],
+  "evidence_refs": [
+    "EVD-JERUSALEM-TEMPLE70-001",
+    "EVD-JERUSALEM-TEMPLE70-002",
+    "EVD-JERUSALEM-TEMPLE70-003",
+    "EVD-JERUSALEM-TEMPLE70-004"
+  ],
+  "narrative_links": [
+    {
+      "narrative_id": "MYTH-JERUSALEM-TEMPLE-DESTRUCTION-PROPHECY-000001",
+      "relation": "associated_with",
+      "status": "supported",
+      "confidence": 0.96,
+      "basis": [
+        "chronological_match",
+        "textual_continuity",
+        "competing_explanation"
+      ],
+      "counterpoints": [
+        "The historical event and Mark 13:2 clearly concern destruction of the Jerusalem Temple, but that correspondence does not by itself establish supernatural prediction.",
+        "Scholarly dating of Mark is often placed around 65–75 CE, so the text's precise chronological relationship to the event should not be silently assumed."
+      ],
+      "source_refs": [
+        "SRC-JERUSALEM-RGBL-MARK-13-2",
+        "SRC-JERUSALEM-CAMBRIDGE-MARK-DATE",
+        "SRC-JERUSALEM-MET-WORLD-BETWEEN-EMPIRES"
+      ]
+    }
+  ],
+  "uncertainty": [
+    "Josephus is a near-contemporary participant/witness and major source, but his account still requires source criticism.",
+    "The exact sequence and responsibility for individual acts during the Temple fire is preserved as source-level detail rather than collapsed into a simplistic single-cause claim.",
+    "LEGEND does not decide the historical attribution, composition date, or theological fulfillment status of Mark 13:2."
+  ],
+  "alternative_interpretations": [
+    "The Mark 13:2 narrative can be read as a pre-event prediction, a tradition shaped near the event, or a text finalized after the event depending on chronology and scholarly model.",
+    "Historical proof of the 70 CE destruction and textual proof that Mark 13:2 contains a prediction are independent propositions."
+  ],
+  "review": {
+    "status": "canonical",
+    "reviewed_by": "Rocksoul four-way integration review",
+    "note": "Canonical scope is the historical siege/capture and Second Temple destruction. Textual-prophecy fulfillment remains outside the event verdict."
+  }
+}

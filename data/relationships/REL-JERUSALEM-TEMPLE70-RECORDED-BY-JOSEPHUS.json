@@ -1,0 +1,13 @@
+{
+  "id": "REL-JERUSALEM-TEMPLE70-RECORDED-BY-JOSEPHUS",
+  "subject_id": "EVT-JERUSALEM-SECOND-TEMPLE-DESTRUCTION-70",
+  "relation": "recorded_by",
+  "object_id": "PER-JERUSALEM-FLAVIUS-JOSEPHUS",
+  "status": "supported",
+  "confidence": 0.98,
+  "source_refs": [
+    "SRC-JERUSALEM-JOSEPHUS-WAR-VI",
+    "SRC-JERUSALEM-MET-WORLD-BETWEEN-EMPIRES"
+  ],
+  "note": "SUPERHERO owns the canonical person and witness/recorder graph; LEGEND only records the event-side relationship."
+}

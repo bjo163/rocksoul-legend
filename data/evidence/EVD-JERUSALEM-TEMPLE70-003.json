@@ -1,0 +1,15 @@
+{
+  "id": "EVD-JERUSALEM-TEMPLE70-003",
+  "claim_id": "CLM-JERUSALEM-TEMPLE70-003",
+  "relation": "contextualizes",
+  "evidence_type": "scholarly_interpretation",
+  "summary": "The Met identifies Flavius Josephus as a critical ancient source for this period, while Josephus's own work provides detailed first-century testimony.",
+  "source_refs": [
+    "SRC-JERUSALEM-JOSEPHUS-WAR-VI",
+    "SRC-JERUSALEM-MET-WORLD-BETWEEN-EMPIRES"
+  ],
+  "confidence": 0.97,
+  "limitations": [
+    "Critical-source status does not imply that every interpretive statement by Josephus is accepted without corroboration."
+  ]
+}

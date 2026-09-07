@@ -1,0 +1,15 @@
+{
+  "id": "SRC-JERUSALEM-RGBL-MARK-13-2",
+  "title": "RGBL canonical Mark 13:2 passages — SBLGNT v1.2 and WEB Classic 2020",
+  "source_type": "institutional",
+  "creator": "rocksoul-rgbl",
+  "date": "current canonical RGBL corpus",
+  "language": "Ancient Greek / English",
+  "locator": "https://github.com/bjo163/rocksoul-rgbl",
+  "provenance": "Cross-repository pointer to rgbl:mw:passage:sblgnt:v1-2:mark:13:2 and rgbl:mw:passage:web-classic:2020:mar:13:2.",
+  "quality": "high",
+  "notes": [
+    "LEGEND does not duplicate scripture text. RGBL owns exact work/expression/passage/content identity and provenance.",
+    "This source supports only the textual subject-matter connection, not the historicity of the 70 CE event."
+  ]
+}

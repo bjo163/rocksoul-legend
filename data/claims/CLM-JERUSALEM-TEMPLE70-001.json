@@ -1,0 +1,14 @@
+{
+  "id": "CLM-JERUSALEM-TEMPLE70-001",
+  "subject_id": "EVT-JERUSALEM-SECOND-TEMPLE-DESTRUCTION-70",
+  "statement": "Roman forces under Titus captured Jerusalem and the Second Temple was destroyed during the 70 CE siege.",
+  "claim_type": "event_existence",
+  "epistemic_status": "strongly_supported",
+  "source_refs": [
+    "SRC-JERUSALEM-JOSEPHUS-WAR-VI",
+    "SRC-JERUSALEM-MET-WORLD-BETWEEN-EMPIRES"
+  ],
+  "notes": [
+    "The claim is historical; it does not encode a theological cause or fulfillment judgment."
+  ]
+}

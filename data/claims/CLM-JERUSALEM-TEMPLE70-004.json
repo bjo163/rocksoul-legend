@@ -1,0 +1,14 @@
+{
+  "id": "CLM-JERUSALEM-TEMPLE70-004",
+  "subject_id": "EVT-JERUSALEM-SECOND-TEMPLE-DESTRUCTION-70",
+  "statement": "Mark 13:2 contains a Temple-destruction prediction that is textually associated with the 70 CE event, while the date of Mark relative to the event remains a scholarly question.",
+  "claim_type": "narrative_connection",
+  "epistemic_status": "supported_as_documentary_attestation",
+  "source_refs": [
+    "SRC-JERUSALEM-RGBL-MARK-13-2",
+    "SRC-JERUSALEM-CAMBRIDGE-MARK-DATE"
+  ],
+  "notes": [
+    "This records the text/event comparison, not supernatural fulfillment."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "CLM-JERUSALEM-TEMPLE70-002",
+  "subject_id": "EVT-JERUSALEM-SECOND-TEMPLE-DESTRUCTION-70",
+  "statement": "The canonical event is dated to 70 CE at year-level precision.",
+  "claim_type": "date",
+  "epistemic_status": "strongly_supported",
+  "source_refs": [
+    "SRC-JERUSALEM-JOSEPHUS-WAR-VI",
+    "SRC-JERUSALEM-MET-WORLD-BETWEEN-EMPIRES"
+  ],
+  "notes": [
+    "Ancient day/month details are not required for the integration proof and remain source-level chronology."
+  ]
+}
