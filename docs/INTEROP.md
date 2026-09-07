@@ -135,3 +135,25 @@ rgbl:mw:passage:...
 ```
 
 without renaming RGBL's native `mw:*` IDs.
+
+
+## Artifact / place / text overlap
+
+The same physical or documentary referent may appear in more than one repository for different purposes.
+
+Use functional ownership:
+
+```text
+LEGEND ART-*
+→ material evidence relevant to an event / historical core
+
+RGBL mw:resource:* / textual artifact
+→ edition / manuscript / digital artifact in the text-provenance supply chain
+
+MFTL object/entity
+→ narrative or symbolic meaning of the artifact/place
+```
+
+Do not auto-merge these records from title, shelfmark, or name similarity. Crosswalk them explicitly when evidence establishes that they refer to the same underlying artifact.
+
+Likewise, an RGBL passage reporting an event is textual evidence; LEGEND still owns the historical-event assessment.
