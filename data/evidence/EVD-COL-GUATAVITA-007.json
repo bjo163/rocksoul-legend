@@ -1,0 +1,16 @@
+{
+  "id": "EVD-COL-GUATAVITA-007",
+  "claim_id": "CLM-COL-GUATAVITA-006",
+  "relation": "supports",
+  "evidence_type": "scholarly_interpretation",
+  "summary": "Peer-reviewed archaeology and museum scholarship explicitly connect Guatavita's colonial ritual descriptions with the history and myth of El Dorado.",
+  "source_refs": [
+    "SRC-COL-CAMBRIDGE-GUATAVITA-2024",
+    "SRC-COL-MET-GUATAVITA-TUNJO",
+    "SRC-COL-BANREP-BALSA-MUISCA"
+  ],
+  "confidence": 0.93,
+  "limitations": [
+    "This supports historical association, not proof that one event was the sole origin of every later El Dorado version."
+  ]
+}

@@ -10,9 +10,10 @@
 - [x] Validator
 - [x] Generated corpus index
 - [x] GitHub Actions validation
-- [ ] First reviewed canonical event
-- [ ] First MFTL narrative relationship
-- [ ] First explicit counterevidence edge
+- [x] First reviewed canonical event — `EVT-COL-GUATAVITA-OFFERINGS`
+- [x] First cross-repository MFTL research relationship — `REL-COL-GUATAVITA-MFTL-CAND-000001`
+- [ ] First canonical `MYTH-*` narrative relationship
+- [x] First explicit counterevidence edge — `EVD-COL-GUATAVITA-004`
 
 ## First integration case
 

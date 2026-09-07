@@ -1,0 +1,12 @@
+{
+  "id": "EVD-COL-GUATAVITA-005",
+  "claim_id": "CLM-COL-GUATAVITA-004",
+  "relation": "supports",
+  "evidence_type": "institutional",
+  "summary": "Banco de la República / Museo del Oro documents the raft's 1969 discovery in a cave at Pasca and collection registration O00015.",
+  "source_refs": [
+    "SRC-COL-BANREP-BALSA-MUISCA"
+  ],
+  "confidence": 0.99,
+  "limitations": []
+}

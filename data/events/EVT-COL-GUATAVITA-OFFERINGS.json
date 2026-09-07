@@ -1,0 +1,66 @@
+{
+  "id": "EVT-COL-GUATAVITA-OFFERINGS",
+  "title": "Pre-contact Muisca ritual offering activity at Lake Guatavita",
+  "event_type": "ritual_event",
+  "aliases": [
+    "Guatavita offering shrine activity",
+    "Muisca offerings at Lake Guatavita"
+  ],
+  "summary": "Archaeological and ethnohistorical evidence supports Lake Guatavita as a Muisca ritual shrine where offerings occurred before European contact. A 2009 archaeological survey, published in Latin American Antiquity, supports small-scale ritual offering activity rather than the conspicuous mass investiture spectacle described in later colonial accounts. The latter remains a separately modeled disputed historical interpretation.",
+  "time": {
+    "start": null,
+    "end": null,
+    "precision": "archaeological_phase",
+    "calendar": null,
+    "note": "Pre-European-contact Muisca period; the surviving evidence does not establish one discrete ceremony date."
+  },
+  "place_refs": [
+    "PLC-COL-LAKE-GUATAVITA"
+  ],
+  "artifact_refs": [
+    "ART-COL-MUISCA-RAFT-PASCA"
+  ],
+  "historicity": {
+    "status": "strongly_supported",
+    "confidence": 0.94,
+    "note": "Confidence refers to ritual shrine/offering activity, not to every detail of later colonial investiture narratives."
+  },
+  "claims": [
+    "CLM-COL-GUATAVITA-001",
+    "CLM-COL-GUATAVITA-002",
+    "CLM-COL-GUATAVITA-003",
+    "CLM-COL-GUATAVITA-004",
+    "CLM-COL-GUATAVITA-005",
+    "CLM-COL-GUATAVITA-006"
+  ],
+  "source_refs": [
+    "SRC-COL-CAMBRIDGE-GUATAVITA-2024",
+    "SRC-COL-BANREP-BALSA-MUISCA",
+    "SRC-COL-BANREP-HISTORIAS-OFRENDAS-2013",
+    "SRC-COL-MET-GUATAVITA-TUNJO"
+  ],
+  "evidence_refs": [
+    "EVD-COL-GUATAVITA-001",
+    "EVD-COL-GUATAVITA-002",
+    "EVD-COL-GUATAVITA-003",
+    "EVD-COL-GUATAVITA-004",
+    "EVD-COL-GUATAVITA-005",
+    "EVD-COL-GUATAVITA-006",
+    "EVD-COL-GUATAVITA-007"
+  ],
+  "narrative_links": [],
+  "uncertainty": [
+    "The archaeology supports ritual use and offerings but does not establish a single lavish investiture ceremony matching later colonial descriptions.",
+    "The Pasca raft is contextual evidence for Muisca votive imagery, not an artifact recovered from Lake Guatavita.",
+    "Exact dates, frequency, scale, and participants of individual pre-contact ceremonies remain uncertain."
+  ],
+  "alternative_interpretations": [
+    "Colonial chroniclers may have amplified or conflated different Muisca offering traditions into a more spectacular investiture narrative.",
+    "The El Dorado narrative may reflect multiple transmission and expansion processes rather than a single-event origin."
+  ],
+  "review": {
+    "status": "canonical",
+    "reviewed_by": "Rocksoul Research evidence review",
+    "note": "Canonical scope is limited to the archaeologically defensible shrine/offering activity; grand investiture details remain disputed claims."
+  }
+}

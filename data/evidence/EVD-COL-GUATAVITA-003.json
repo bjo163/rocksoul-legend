@@ -1,0 +1,15 @@
+{
+  "id": "EVD-COL-GUATAVITA-003",
+  "claim_id": "CLM-COL-GUATAVITA-003",
+  "relation": "supports",
+  "evidence_type": "textual",
+  "summary": "Colonial-account summaries describe a gold-covered ruler traveling by raft and casting offerings into the lake.",
+  "source_refs": [
+    "SRC-COL-MET-GUATAVITA-TUNJO",
+    "SRC-COL-CAMBRIDGE-GUATAVITA-2024"
+  ],
+  "confidence": 0.62,
+  "limitations": [
+    "Textual attestation of a narrative is weaker than direct evidence that the spectacle occurred exactly as narrated."
+  ]
+}

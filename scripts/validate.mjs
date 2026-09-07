@@ -13,7 +13,9 @@ const schemas={
   sources:ajv.compile(readJson("schemas/source.schema.json")),
   claims:ajv.compile(readJson("schemas/claim.schema.json")),
   evidence:ajv.compile(readJson("schemas/evidence.schema.json")),
-  relationships:ajv.compile(readJson("schemas/relationship.schema.json"))
+  relationships:ajv.compile(readJson("schemas/relationship.schema.json")),
+  places:ajv.compile(readJson("schemas/place.schema.json")),
+  artifacts:ajv.compile(readJson("schemas/artifact.schema.json"))
 };
 
 const taxonomy=readJson("taxonomy/event-types.json");

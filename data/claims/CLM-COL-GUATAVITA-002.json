@@ -1,0 +1,14 @@
+{
+  "id": "CLM-COL-GUATAVITA-002",
+  "subject_id": "EVT-COL-GUATAVITA-OFFERINGS",
+  "statement": "Sixteenth- and seventeenth-century Spanish chronicles described Lake Guatavita as a center of mass offering ceremonies or lavish chiefly investiture rituals.",
+  "claim_type": "interpretation",
+  "epistemic_status": "supported_as_documentary_attestation",
+  "source_refs": [
+    "SRC-COL-CAMBRIDGE-GUATAVITA-2024",
+    "SRC-COL-MET-GUATAVITA-TUNJO"
+  ],
+  "notes": [
+    "This status means the descriptions are textually attested; it does not prove all narrated details occurred."
+  ]
+}

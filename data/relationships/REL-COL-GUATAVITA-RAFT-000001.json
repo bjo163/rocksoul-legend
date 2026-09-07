@@ -1,0 +1,13 @@
+{
+  "id": "REL-COL-GUATAVITA-RAFT-000001",
+  "subject_id": "ART-COL-MUISCA-RAFT-PASCA",
+  "relation": "associated_with",
+  "object_id": "EVT-COL-GUATAVITA-OFFERINGS",
+  "status": "hypothesis",
+  "confidence": 0.72,
+  "source_refs": [
+    "SRC-COL-BANREP-BALSA-MUISCA",
+    "SRC-COL-BANREP-HISTORIAS-OFRENDAS-2013"
+  ],
+  "note": "The raft is traditionally interpreted as a Guatavita investiture scene but was recovered at Pasca; the relationship is contextual, not direct event provenance."
+}

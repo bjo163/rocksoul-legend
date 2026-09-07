@@ -1,0 +1,14 @@
+{
+  "id": "EVD-COL-GUATAVITA-004",
+  "claim_id": "CLM-COL-GUATAVITA-003",
+  "relation": "contradicts",
+  "evidence_type": "archaeological",
+  "summary": "The archaeological survey's material distribution supports small-scale ritual offerings rather than conspicuous mass celebrations, challenging a literal reconstruction of the grand investiture spectacle.",
+  "source_refs": [
+    "SRC-COL-CAMBRIDGE-GUATAVITA-2024"
+  ],
+  "confidence": 0.92,
+  "limitations": [
+    "Absence of archaeological evidence for a spectacle does not prove no exceptional ceremony ever occurred."
+  ]
+}

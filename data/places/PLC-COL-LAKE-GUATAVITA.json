@@ -1,0 +1,24 @@
+{
+  "id": "PLC-COL-LAKE-GUATAVITA",
+  "name": "Lake Guatavita",
+  "place_type": "lake",
+  "country": "Colombia",
+  "region": "Cundinamarca / Guatavita-Guasca Valley",
+  "historical_names": [
+    "Laguna de Guatavita"
+  ],
+  "modern_names": [
+    "Laguna de Guatavita",
+    "Lake Guatavita"
+  ],
+  "coordinates": null,
+  "summary": "A highland lake in Cundinamarca associated with Muisca ritual offering activity and later colonial El Dorado narratives. Archaeological survey around the lake supports a ritual shrine with small-scale offerings.",
+  "source_refs": [
+    "SRC-COL-CAMBRIDGE-GUATAVITA-2024",
+    "SRC-COL-MET-GUATAVITA-TUNJO"
+  ],
+  "uncertainty": [
+    "This record intentionally omits coordinates until a controlled geospatial source is added.",
+    "The spatial extent of the archaeological ritual area is broader than a single point coordinate."
+  ]
+}

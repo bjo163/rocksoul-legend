@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://rocksoul.dev/legend/schemas/place.schema.json",
+  "title": "LEGEND Place Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "place_type",
+    "country",
+    "region",
+    "coordinates",
+    "summary",
+    "source_refs",
+    "uncertainty"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^PLC-[A-Z0-9][A-Z0-9-]*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "place_type": {
+      "enum": [
+        "lake",
+        "site",
+        "settlement",
+        "region",
+        "landscape",
+        "cave",
+        "other"
+      ]
+    },
+    "country": {
+      "type": "string",
+      "minLength": 1
+    },
+    "region": {
+      "type": "string",
+      "minLength": 1
+    },
+    "historical_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "modern_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "coordinates": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "lat",
+            "lon",
+            "precision"
+          ],
+          "properties": {
+            "lat": {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90
+            },
+            "lon": {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180
+            },
+            "precision": {
+              "enum": [
+                "exact",
+                "approximate",
+                "regional"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^SRC-[A-Z0-9][A-Z0-9-]*$"
+      }
+    },
+    "uncertainty": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

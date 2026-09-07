@@ -1,0 +1,14 @@
+{
+  "id": "EVD-COL-GUATAVITA-001",
+  "claim_id": "CLM-COL-GUATAVITA-001",
+  "relation": "supports",
+  "evidence_type": "archaeological",
+  "summary": "The 2009 archaeological survey around Lake Guatavita found material patterns interpreted as a shrine for small-scale ritual offerings.",
+  "source_refs": [
+    "SRC-COL-CAMBRIDGE-GUATAVITA-2024"
+  ],
+  "confidence": 0.96,
+  "limitations": [
+    "Archaeological distribution does not reconstruct every ritual act or participant."
+  ]
+}

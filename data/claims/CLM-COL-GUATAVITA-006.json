@@ -1,0 +1,15 @@
+{
+  "id": "CLM-COL-GUATAVITA-006",
+  "subject_id": "EVT-COL-GUATAVITA-OFFERINGS",
+  "statement": "The Guatavita ritual complex and colonial descriptions of it became historically associated with the later El Dorado narrative.",
+  "claim_type": "narrative_connection",
+  "epistemic_status": "strongly_supported",
+  "source_refs": [
+    "SRC-COL-CAMBRIDGE-GUATAVITA-2024",
+    "SRC-COL-MET-GUATAVITA-TUNJO",
+    "SRC-COL-BANREP-BALSA-MUISCA"
+  ],
+  "notes": [
+    "Association is well attested; this claim intentionally does not assert a single causal origin."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "EVD-COL-GUATAVITA-002",
+  "claim_id": "CLM-COL-GUATAVITA-002",
+  "relation": "supports",
+  "evidence_type": "textual",
+  "summary": "Peer-reviewed synthesis and museum records document that sixteenth- and seventeenth-century Spanish accounts described Guatavita offering and chiefly investiture rituals.",
+  "source_refs": [
+    "SRC-COL-CAMBRIDGE-GUATAVITA-2024",
+    "SRC-COL-MET-GUATAVITA-TUNJO"
+  ],
+  "confidence": 0.9,
+  "limitations": [
+    "These are later colonial textual accounts, not archaeological observation of the described ceremony."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "CLM-COL-GUATAVITA-004",
+  "subject_id": "EVT-COL-GUATAVITA-OFFERINGS",
+  "statement": "The surviving Muisca raft in the Museo del Oro was found in 1969 in a cave at Pasca, Cundinamarca, rather than at Lake Guatavita.",
+  "claim_type": "artifact",
+  "epistemic_status": "supported_as_material_attestation",
+  "source_refs": [
+    "SRC-COL-BANREP-BALSA-MUISCA"
+  ],
+  "notes": [
+    "Museum registration O00015."
+  ]
+}

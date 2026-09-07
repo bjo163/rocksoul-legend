@@ -53,3 +53,20 @@ Do not copy the full foreign object. Store a stable reference plus an evidence-b
 - **What was told?** → MFTL.
 - **What happened?** → LEGEND.
 - **Who acted, witnessed, recorded, translated, transmitted, or disputed it?** → PERSONA.
+
+
+## First live cross-repository link
+
+LEGEND's first canonical event is:
+
+`EVT-COL-GUATAVITA-OFFERINGS`
+
+It links to the existing MFTL research candidate:
+
+`CAND-COL-MUISCA-EL-DORADO-GUATAVITA-000001`
+
+through:
+
+`REL-COL-GUATAVITA-MFTL-CAND-000001`
+
+The relation is `associated_with`, not `origin_of`. A canonical `MYTH-*` link remains a later milestone after the MFTL candidate itself is reviewed and promoted.

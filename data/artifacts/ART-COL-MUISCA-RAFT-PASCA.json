@@ -1,0 +1,26 @@
+{
+  "id": "ART-COL-MUISCA-RAFT-PASCA",
+  "title": "Muisca Raft (Balsa muisca)",
+  "artifact_type": "votive_object",
+  "culture": "Muisca",
+  "date": {
+    "label": "Muisca period; museum reference gives a broad pre-Hispanic/late Muisca range",
+    "precision": "period"
+  },
+  "discovery": {
+    "year": 1969,
+    "place_id": null,
+    "note": "Found in a ceramic container inside a small cave in the páramo of Pasca, Cundinamarca—not at Lake Guatavita."
+  },
+  "repository": "Museo del Oro, Banco de la República, Bogotá",
+  "registration": "O00015",
+  "summary": "Gold votive raft with figures, produced by lost-wax casting. It is traditionally interpreted as a representation of a Guatavita chiefly investiture ceremony, but its Pasca findspot and broad dating prevent treating it as direct proof of a specific Lake Guatavita event.",
+  "source_refs": [
+    "SRC-COL-BANREP-BALSA-MUISCA",
+    "SRC-COL-BANREP-HISTORIAS-OFRENDAS-2013"
+  ],
+  "uncertainty": [
+    "Exact manufacture date is not precise enough to link the object to one named investiture event.",
+    "The scene-to-Guatavita identification is an interpretation, not direct event provenance."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "EVD-COL-GUATAVITA-006",
+  "claim_id": "CLM-COL-GUATAVITA-005",
+  "relation": "supports",
+  "evidence_type": "scholarly_interpretation",
+  "summary": "Museo del Oro identifies the raft as a votive object and records the traditional interpretation that its scene represents the Guatavita investiture ceremony.",
+  "source_refs": [
+    "SRC-COL-BANREP-BALSA-MUISCA",
+    "SRC-COL-BANREP-HISTORIAS-OFRENDAS-2013"
+  ],
+  "confidence": 0.8,
+  "limitations": [
+    "The artifact was found at Pasca, not Lake Guatavita.",
+    "Its exact manufacture date and event referent are uncertain."
+  ]
+}

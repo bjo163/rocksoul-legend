@@ -1,0 +1,14 @@
+{
+  "id": "REL-COL-GUATAVITA-MFTL-CAND-000001",
+  "subject_id": "EVT-COL-GUATAVITA-OFFERINGS",
+  "relation": "associated_with",
+  "object_id": "CAND-COL-MUISCA-EL-DORADO-GUATAVITA-000001",
+  "status": "supported",
+  "confidence": 0.95,
+  "source_refs": [
+    "SRC-COL-CAMBRIDGE-GUATAVITA-2024",
+    "SRC-COL-BANREP-BALSA-MUISCA",
+    "SRC-COL-MET-GUATAVITA-TUNJO"
+  ],
+  "note": "Cross-repository link to the existing MFTL research candidate. This relationship records a defensible association and does not assert origin_of."
+}
