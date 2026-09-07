@@ -16,6 +16,8 @@ const index={schema_version:"0.1",counts:{
   claims:count("data/claims"),
   evidence_edges:count("data/evidence"),
   relationships:count("data/relationships"),
+  places:count("data/places"),
+  artifacts:count("data/artifacts"),
   event_types:taxonomy.types.length
 }};
 
