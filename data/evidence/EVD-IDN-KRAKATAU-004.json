@@ -1,0 +1,14 @@
+{
+  "id": "EVD-IDN-KRAKATAU-004",
+  "claim_id": "CLM-IDN-KRAKATAU-004",
+  "relation": "supports",
+  "evidence_type": "geological",
+  "summary": "Smithsonian reports pyroclastic surges traveling roughly 40 km across the Sunda Strait and reaching Sumatra.",
+  "source_refs": [
+    "SRC-IDN-SMITHSONIAN-KRAKATAU"
+  ],
+  "confidence": 0.97,
+  "limitations": [
+    "This is a compiled scientific summary rather than a newly generated measurement in this repository."
+  ]
+}

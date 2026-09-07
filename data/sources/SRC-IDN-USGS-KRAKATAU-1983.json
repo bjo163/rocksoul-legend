@@ -1,0 +1,14 @@
+{
+  "id": "SRC-IDN-USGS-KRAKATAU-1983",
+  "title": "Krakatau 1883",
+  "source_type": "institutional",
+  "creator": "T. Simkin and R.S. Fiske, U.S. Geological Survey",
+  "date": "1983",
+  "language": "English",
+  "locator": "https://pubs.usgs.gov/publication/70168593",
+  "provenance": "USGS Earthquake Information Bulletin, v. 15, no. 4, pp. 128–133.",
+  "quality": "high",
+  "notes": [
+    "Centennial scientific summary of the 1883 eruption and global effects."
+  ]
+}

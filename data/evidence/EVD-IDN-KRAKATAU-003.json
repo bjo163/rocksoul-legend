@@ -1,0 +1,16 @@
+{
+  "id": "EVD-IDN-KRAKATAU-003",
+  "claim_id": "CLM-IDN-KRAKATAU-003",
+  "relation": "supports",
+  "evidence_type": "institutional",
+  "summary": "Smithsonian, NOAA, and USGS converge on a death toll above 36,000 and identify tsunamis as the dominant cause of mortality.",
+  "source_refs": [
+    "SRC-IDN-SMITHSONIAN-KRAKATAU",
+    "SRC-IDN-NOAA-KRAKATAU-1883",
+    "SRC-IDN-USGS-KRAKATAU-1983"
+  ],
+  "confidence": 0.96,
+  "limitations": [
+    "Exact totals vary by historical source and methodology."
+  ]
+}

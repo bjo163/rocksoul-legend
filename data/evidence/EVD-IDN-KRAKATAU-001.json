@@ -1,0 +1,16 @@
+{
+  "id": "EVD-IDN-KRAKATAU-001",
+  "claim_id": "CLM-IDN-KRAKATAU-001",
+  "relation": "supports",
+  "evidence_type": "geological",
+  "summary": "Smithsonian, NOAA/NCEI, and USGS independently document the catastrophic August 1883 eruptive phase and major island/caldera collapse.",
+  "source_refs": [
+    "SRC-IDN-SMITHSONIAN-KRAKATAU",
+    "SRC-IDN-NOAA-KRAKATAU-1883",
+    "SRC-IDN-USGS-KRAKATAU-1983"
+  ],
+  "confidence": 0.99,
+  "limitations": [
+    "Historical summaries differ in wording and some numerical details."
+  ]
+}

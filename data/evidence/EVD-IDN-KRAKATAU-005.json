@@ -1,0 +1,14 @@
+{
+  "id": "EVD-IDN-KRAKATAU-005",
+  "claim_id": "CLM-IDN-KRAKATAU-005",
+  "relation": "contradicts",
+  "evidence_type": "geographical",
+  "summary": "NOAA notes that continental and island shadowing means a direct tsunami could not have reached many of the remote stations that recorded disturbances.",
+  "source_refs": [
+    "SRC-IDN-NOAA-KRAKATAU-TRAVEL-TIME"
+  ],
+  "confidence": 0.95,
+  "limitations": [
+    "Some distant locations may still have recorded direct or mixed oceanic effects; the claim concerns the universal 'all direct tsunami' interpretation."
+  ]
+}

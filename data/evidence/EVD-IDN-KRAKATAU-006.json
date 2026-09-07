@@ -1,0 +1,14 @@
+{
+  "id": "EVD-IDN-KRAKATAU-006",
+  "claim_id": "CLM-IDN-KRAKATAU-005",
+  "relation": "alternative_explanation",
+  "evidence_type": "environmental",
+  "summary": "NOAA identifies atmospheric gravity waves from the eruption as a mechanism that may have transferred energy into the ocean and produced remote water-level signals.",
+  "source_refs": [
+    "SRC-IDN-NOAA-KRAKATAU-TRAVEL-TIME"
+  ],
+  "confidence": 0.9,
+  "limitations": [
+    "The exact contribution can vary by station and observation."
+  ]
+}

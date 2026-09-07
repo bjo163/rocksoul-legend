@@ -1,0 +1,15 @@
+{
+  "id": "CLM-IDN-KRAKATAU-003",
+  "subject_id": "EVT-IDN-KRAKATAU-1883",
+  "statement": "More than 36,000 fatalities are commonly attributed to the 1883 Krakatau disaster, with most deaths caused by tsunamis.",
+  "claim_type": "other",
+  "epistemic_status": "strongly_supported",
+  "source_refs": [
+    "SRC-IDN-SMITHSONIAN-KRAKATAU",
+    "SRC-IDN-NOAA-KRAKATAU-1883",
+    "SRC-IDN-USGS-KRAKATAU-1983"
+  ],
+  "notes": [
+    "The record intentionally avoids presenting one casualty total as exact beyond all historical uncertainty."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "CLM-IDN-KRAKATAU-005",
+  "subject_id": "EVT-IDN-KRAKATAU-1883",
+  "statement": "Remote water-level disturbances recorded at widely separated stations were all direct tsunami waves propagating through the ocean from Krakatau.",
+  "claim_type": "interpretation",
+  "epistemic_status": "disputed",
+  "source_refs": [
+    "SRC-IDN-NOAA-KRAKATAU-TRAVEL-TIME"
+  ],
+  "notes": [
+    "NOAA notes continental shadowing prevented direct tsunami arrival at many remote locations and identifies atmosphere-ocean coupling as an alternative mechanism."
+  ]
+}

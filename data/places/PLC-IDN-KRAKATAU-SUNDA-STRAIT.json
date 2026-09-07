@@ -1,0 +1,23 @@
+{
+  "id": "PLC-IDN-KRAKATAU-SUNDA-STRAIT",
+  "name": "Krakatau, Sunda Strait",
+  "place_type": "site",
+  "country": "Indonesia",
+  "region": "Sunda Strait between Java and Sumatra",
+  "historical_names": [
+    "Krakatau",
+    "Krakatoa"
+  ],
+  "modern_names": [
+    "Krakatau"
+  ],
+  "coordinates": null,
+  "summary": "Volcanic island complex in the Sunda Strait between Java and Sumatra. The catastrophic 1883 eruption and caldera collapse generated destructive tsunamis affecting nearby coastlines.",
+  "source_refs": [
+    "SRC-IDN-SMITHSONIAN-KRAKATAU",
+    "SRC-IDN-NOAA-KRAKATAU-1883"
+  ],
+  "uncertainty": [
+    "Coordinates are intentionally omitted from v0.1 because the event involves a changing volcanic island/caldera complex rather than a single immutable point."
+  ]
+}

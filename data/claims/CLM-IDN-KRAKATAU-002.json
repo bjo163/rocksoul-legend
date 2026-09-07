@@ -1,0 +1,13 @@
+{
+  "id": "CLM-IDN-KRAKATAU-002",
+  "subject_id": "EVT-IDN-KRAKATAU-1883",
+  "statement": "The 1883 eruption-collapse sequence generated destructive tsunamis that devastated adjacent coastlines of Java and Sumatra.",
+  "claim_type": "cause",
+  "epistemic_status": "strongly_supported",
+  "source_refs": [
+    "SRC-IDN-NOAA-KRAKATAU-1883",
+    "SRC-IDN-SMITHSONIAN-KRAKATAU",
+    "SRC-IDN-USGS-KRAKATAU-1983"
+  ],
+  "notes": []
+}

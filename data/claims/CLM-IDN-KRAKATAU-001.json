@@ -1,0 +1,13 @@
+{
+  "id": "CLM-IDN-KRAKATAU-001",
+  "subject_id": "EVT-IDN-KRAKATAU-1883",
+  "statement": "The catastrophic phase of the Krakatau eruption occurred on 26–27 August 1883 and involved collapse of much of the pre-1883 volcanic island.",
+  "claim_type": "event_existence",
+  "epistemic_status": "strongly_supported",
+  "source_refs": [
+    "SRC-IDN-NOAA-KRAKATAU-1883",
+    "SRC-IDN-SMITHSONIAN-KRAKATAU",
+    "SRC-IDN-USGS-KRAKATAU-1983"
+  ],
+  "notes": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "CLM-IDN-KRAKATAU-004",
+  "subject_id": "EVT-IDN-KRAKATAU-1883",
+  "statement": "Pyroclastic surges from the 1883 eruption traveled across the Sunda Strait and reached the Sumatra coast.",
+  "claim_type": "other",
+  "epistemic_status": "strongly_supported",
+  "source_refs": [
+    "SRC-IDN-SMITHSONIAN-KRAKATAU"
+  ],
+  "notes": [
+    "Smithsonian summarizes surge travel of about 40 km across the Sunda Strait."
+  ]
+}

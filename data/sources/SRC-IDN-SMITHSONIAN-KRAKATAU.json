@@ -1,0 +1,14 @@
+{
+  "id": "SRC-IDN-SMITHSONIAN-KRAKATAU",
+  "title": "Global Volcanism Program — Krakatau",
+  "source_type": "institutional",
+  "creator": "Smithsonian Institution, Global Volcanism Program",
+  "date": null,
+  "language": "English",
+  "locator": "https://volcano.si.edu/volcano.cfm?vn=262000",
+  "provenance": "Smithsonian Institution Global Volcanism Program volcano profile for Krakatau, Indonesia.",
+  "quality": "high",
+  "notes": [
+    "Summarizes the 1883 caldera-collapse eruption, tsunami fatalities, and pyroclastic surges crossing the Sunda Strait."
+  ]
+}

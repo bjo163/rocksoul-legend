@@ -1,0 +1,14 @@
+{
+  "id": "EVD-IDN-KRAKATAU-002",
+  "claim_id": "CLM-IDN-KRAKATAU-002",
+  "relation": "supports",
+  "evidence_type": "geological",
+  "summary": "Institutional volcano and tsunami sources describe the eruption-collapse sequence as generating destructive tsunamis on nearby Java and Sumatra coastlines.",
+  "source_refs": [
+    "SRC-IDN-SMITHSONIAN-KRAKATAU",
+    "SRC-IDN-NOAA-KRAKATAU-1883",
+    "SRC-IDN-USGS-KRAKATAU-1983"
+  ],
+  "confidence": 0.99,
+  "limitations": []
+}

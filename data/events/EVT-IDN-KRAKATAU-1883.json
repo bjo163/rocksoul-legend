@@ -1,0 +1,60 @@
+{
+  "id": "EVT-IDN-KRAKATAU-1883",
+  "title": "Catastrophic Krakatau eruption and tsunami sequence, August 1883",
+  "event_type": "natural_disaster",
+  "aliases": [
+    "1883 Krakatau eruption",
+    "1883 Krakatoa eruption"
+  ],
+  "summary": "The 1883 Krakatau eruption culminated in catastrophic explosions and caldera collapse on 26–27 August, destroying much of the pre-1883 island and generating destructive tsunamis along Java and Sumatra. More than 36,000 fatalities are commonly reported, with most attributed to tsunamis. The event also produced globally recorded atmospheric-pressure effects. LEGEND separates direct tsunami propagation from remote water-level disturbances that NOAA notes may have been excited by atmospheric gravity waves.",
+  "time": {
+    "start": "1883-08-26",
+    "end": "1883-08-27",
+    "precision": "date",
+    "calendar": "Gregorian",
+    "note": "The catastrophic phase is modeled as 26–27 August 1883; precursor activity began earlier in 1883."
+  },
+  "place_refs": [
+    "PLC-IDN-KRAKATAU-SUNDA-STRAIT"
+  ],
+  "artifact_refs": [],
+  "historicity": {
+    "status": "strongly_supported",
+    "confidence": 0.995,
+    "note": "The eruption, collapse, tsunamis, and widespread observations are extensively documented. Confidence does not imply every historical measurement or casualty estimate is exact."
+  },
+  "claims": [
+    "CLM-IDN-KRAKATAU-001",
+    "CLM-IDN-KRAKATAU-002",
+    "CLM-IDN-KRAKATAU-003",
+    "CLM-IDN-KRAKATAU-004",
+    "CLM-IDN-KRAKATAU-005"
+  ],
+  "source_refs": [
+    "SRC-IDN-SMITHSONIAN-KRAKATAU",
+    "SRC-IDN-NOAA-KRAKATAU-1883",
+    "SRC-IDN-NOAA-KRAKATAU-TRAVEL-TIME",
+    "SRC-IDN-USGS-KRAKATAU-1983"
+  ],
+  "evidence_refs": [
+    "EVD-IDN-KRAKATAU-001",
+    "EVD-IDN-KRAKATAU-002",
+    "EVD-IDN-KRAKATAU-003",
+    "EVD-IDN-KRAKATAU-004",
+    "EVD-IDN-KRAKATAU-005",
+    "EVD-IDN-KRAKATAU-006"
+  ],
+  "narrative_links": [],
+  "uncertainty": [
+    "Historical casualty totals vary by source and counting method; the canonical record preserves the widely cited >36,000 scale rather than claiming an exact universal total.",
+    "Not every remote water-level disturbance recorded globally should be interpreted as a direct ocean-traveling tsunami."
+  ],
+  "alternative_interpretations": [
+    "For some distant tide-gauge disturbances, NOAA identifies atmospheric gravity-wave coupling as a plausible explanation where direct tsunami propagation was blocked by continents."
+  ],
+  "review": {
+    "status": "canonical",
+    "reviewed_by": "Rocksoul Research evidence review",
+    "note": "Canonical scope covers the eruption-collapse-tsunami sequence and explicitly separates nearby direct tsunami impact from some remote atmosphere-coupled water-level signals."
+  }
+}
