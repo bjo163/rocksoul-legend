@@ -78,7 +78,48 @@ LEGEND v0.1 is considered ready when:
 - one reviewed canonical event is complete;
 - that event has a defensible cross-repository link to MFTL.
 
-The first integration case will be **Guatavita / El Dorado**, because MFTL already has a related research lead and the case combines ritual tradition, documentary evidence, place, artifact, and later narrative development.
+The first integration case was **Guatavita / El Dorado**, chosen because MFTL already had a related research lead and the case combines ritual tradition, documentary evidence, place, artifact, counterevidence, and later narrative development.
+
+## First canonical event
+
+### `EVT-COL-GUATAVITA-OFFERINGS`
+
+**Pre-contact Muisca ritual offering activity at Lake Guatavita**
+
+```text
+LAKE GUATAVITA
+      ↓
+ARCHAEOLOGICAL SHRINE EVIDENCE
+      ↓
+SMALL-SCALE RITUAL OFFERINGS        strongly supported
+      │
+      ├── COLONIAL GRAND CEREMONY   disputed
+      │         ↕
+      │    textual support
+      │    archaeological counterevidence
+      │
+      ├── PASCA MUISCA RAFT         contextual artifact
+      │
+      └── EL DORADO                 historically associated
+                                    ≠ proven single origin
+```
+
+Current canonical graph:
+
+```text
+1 event
+1 place
+1 artifact
+4 sources
+6 claims
+7 evidence edges
+2 relationships
+```
+
+The most important result is not a yes/no verdict: **archaeology supports ritual offering activity, while the spectacular investiture narrative remains separately modeled as disputed.**
+
+[Read the canonical event →](data/events/EVT-COL-GUATAVITA-OFFERINGS.json) ·
+[Read interoperability →](docs/INTEROP.md)
 
 ## Research principles
 
