@@ -67,16 +67,17 @@ Who was involved?       → PERSONA
 
 Shared primitives such as sources, claims, evidence, places, artifacts, and relationships remain interoperable concepts rather than separate repositories.
 
-## Foundation target
+## v0.1 maturity
 
-LEGEND v0.1 is considered ready when:
+LEGEND is intentionally small, but the core EVENT model has now been tested across three different evidence patterns:
 
-- event/source/evidence/relationship contracts validate;
-- time and location uncertainty are explicit;
-- historical correlation never silently becomes causation;
-- CI is green;
-- one reviewed canonical event is complete;
-- that event has a defensible cross-repository link to MFTL.
+| Case | Event class | Evidence pattern | Result |
+|---|---|---|---|
+| **Guatavita** | ritual event | archaeology + artifact + colonial text | canonical, with explicit counterevidence |
+| **Krakatau 1883** | natural disaster | geology + tsunami + modern institutional record | canonical |
+| **Halley 1066** | astronomical event | astronomy + museum/documentary record | canonical |
+
+The validator checks both **JSON shape** and **semantic graph references**. Missing local sources, claims, evidence, places, artifacts, or broken local relationship endpoints fail CI.
 
 The first integration case was **Guatavita / El Dorado**, chosen because MFTL already had a related research lead and the case combines ritual tradition, documentary evidence, place, artifact, counterevidence, and later narrative development.
 
@@ -107,12 +108,12 @@ SMALL-SCALE RITUAL OFFERINGS        strongly supported
 Current canonical graph:
 
 ```text
-1 event
-1 place
+3 events
+3 places
 1 artifact
-4 sources
-6 claims
-7 evidence edges
+11 sources
+15 claims
+17 evidence edges
 2 relationships
 ```
 
@@ -120,6 +121,31 @@ The most important result is not a yes/no verdict: **archaeology supports ritual
 
 [Read the canonical event →](data/events/EVT-COL-GUATAVITA-OFFERINGS.json) ·
 [Read interoperability →](docs/INTEROP.md)
+
+## Generalization cases
+
+### Krakatau 1883
+
+`EVT-IDN-KRAKATAU-1883`
+
+Tests **natural-science evidence** and separates direct tsunami effects from some remote water-level signals better explained through atmosphere–ocean coupling.
+
+### Halley 1066
+
+`EVT-GBR-HALLEY-1066`
+
+Tests **astronomical + documentary evidence** and separates the observed comet apparition from later omen interpretation.
+
+```text
+RITUAL / MATERIAL        ✅
+NATURAL SCIENCE          ✅
+ASTRONOMICAL / DOCUMENT  ✅
+SCHEMA VALIDATION        ✅
+GRAPH VALIDATION         ✅
+CI                       ✅
+```
+
+**LEGEND v0.1 is mature enough to stop expanding the foundation.**
 
 ## Research principles
 
