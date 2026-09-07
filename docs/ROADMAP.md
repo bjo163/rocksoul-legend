@@ -39,4 +39,4 @@
 
 Do **not** expand the foundation with UI, database, backend, automation, scoring, or broad new taxonomies just to make the repository larger.
 
-The next major architecture work belongs in **PERSONA**, after a final audit confirms LEGEND remains simple and internally consistent.
+SUPERHERO now owns person/actor/transmission intelligence. LEGEND remains frozen at the event layer; future cross-repo work should add evidence-backed references rather than expanding LEGEND into biography or narrative ownership.

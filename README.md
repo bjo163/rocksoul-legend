@@ -53,19 +53,21 @@ POSSIBLE NARRATIVE CONNECTION
 |---|---|---|---|
 | **rocksoul-mftl** | Narrative Intelligence | What was told? | TRACE THE STORY. |
 | **rocksoul-legend** | Historical & Event Intelligence | What happened? | TRACE THE EVENT. |
-| **rocksoul-persona** | Actor & Transmission Intelligence | Who was involved? | TRACE THE PERSON. |
+| **rocksoul-superhero** | Actor & Transmission Intelligence | Who was involved? | TRACE THE PERSON. |
 
-For now, **LEGEND owns EVENT**. MFTL owns narrative records. PERSONA is planned later.
+For now, **LEGEND owns EVENT**. MFTL owns narrative records. SUPERHERO owns person / actor / transmission records.
 
 ## Ownership rule
 
 ```text
 What was told?          → MFTL
 What happened?          → LEGEND
-Who was involved?       → PERSONA
+Who was involved?       → SUPERHERO
 ```
 
 Shared primitives such as sources, claims, evidence, places, artifacts, and relationships remain interoperable concepts rather than separate repositories.
+
+SUPERHERO now provides the human-agency side of the graph. For example, `PER-COL-JUAN-RODRIGUEZ-FREYLE` links the Guatavita event to a later colonial recorder/transmission chain without changing LEGEND's ownership of the event itself.
 
 ## v0.1 maturity
 

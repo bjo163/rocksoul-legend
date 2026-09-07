@@ -2,7 +2,7 @@
 
 - [Data Model](DATA_MODEL.md) — event ownership, historicity, time, and evidence.
 - [Research Policy](RESEARCH_POLICY.md) — source hierarchy, uncertainty, and anti-overclaim rules.
-- [Interop Contract](INTEROP.md) — MFTL linkage now and PERSONA later.
+- [Interop Contract](INTEROP.md) — MFTL and SUPERHERO ownership / cross-repository linkage.
 - [Roadmap](ROADMAP.md) — v0.1 acceptance criteria.
 
 > LEGEND stores evidence and uncertainty before interpreting a possible narrative connection.

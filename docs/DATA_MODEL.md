@@ -5,7 +5,7 @@
 ```text
 MFTL     → narrative
 LEGEND   → event
-PERSONA  → person / actor (planned)
+SUPERHERO → person / actor / transmission
 ```
 
 LEGEND owns **events**. Shared concepts are sources, claims, evidence, places, artifacts, and relationships.
