@@ -6,6 +6,7 @@
 MFTL      STORY      What was told?
 LEGEND    EVENT      What happened?
 SUPERHERO PERSON     Who was involved?
+RGBL      TEXT       What does the source text say?
 ```
 
 ## Identifier grammar
@@ -53,6 +54,7 @@ Do not copy the full foreign object. Store a stable reference plus an evidence-b
 - **What was told?** → MFTL.
 - **What happened?** → LEGEND.
 - **Who acted, witnessed, recorded, translated, transmitted, interpreted, or disputed it?** → SUPERHERO.
+- **What does the exact scripture/source passage say?** → RGBL.
 
 
 ## First live cross-repository link
@@ -109,3 +111,27 @@ The existing relationship `REL-COL-GUATAVITA-MFTL-CAND-000001` intentionally pre
 ## Validation boundary
 
 LEGEND validates local graph integrity and recognizes external namespaces, but does not remotely dereference every MFTL/SUPERHERO target during each CI run. Cross-repository existence is verified during research/audit so repository builds remain independent.
+
+
+## RGBL integration
+
+`bjo163/rocksoul-rgbl` is the scripture/text reference layer. LEGEND may use RGBL passages or scoped assertions as textual evidence/context, but RGBL does not decide whether a historical event occurred.
+
+```text
+RGBL passage / assertion
+        ↓ textual evidence
+LEGEND historical claim
+        ↓
+historicity assessment
+```
+
+A source text reporting an event is **textual attestation**, not automatic proof of the event.
+
+Qualified external notation may use:
+
+```text
+rgbl:mw:work:...
+rgbl:mw:passage:...
+```
+
+without renaming RGBL's native `mw:*` IDs.

@@ -3,9 +3,10 @@
 ## Ownership
 
 ```text
-MFTL     → narrative
-LEGEND   → event
+MFTL      → narrative
+LEGEND    → event
 SUPERHERO → person / actor / transmission
+RGBL      → text / passage / scripture-reference provenance
 ```
 
 LEGEND owns **events**. Shared concepts are sources, claims, evidence, places, artifacts, and relationships.

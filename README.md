@@ -54,8 +54,9 @@ POSSIBLE NARRATIVE CONNECTION
 | **rocksoul-mftl** | Narrative Intelligence | What was told? | TRACE THE STORY. |
 | **rocksoul-legend** | Historical & Event Intelligence | What happened? | TRACE THE EVENT. |
 | **rocksoul-superhero** | Actor & Transmission Intelligence | Who was involved? | TRACE THE PERSON. |
+| **rocksoul-rgbl** | Scripture & Revelation Reference | What does the source text say? | TRACE THE TEXT. |
 
-For now, **LEGEND owns EVENT**. MFTL owns narrative records. SUPERHERO owns person / actor / transmission records.
+**LEGEND owns EVENT**. MFTL owns narrative records. SUPERHERO owns person / actor / transmission records. RGBL owns exact scripture/text corpus identity, passages, and provenance.
 
 ## Ownership rule
 
