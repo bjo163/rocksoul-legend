@@ -6,9 +6,10 @@ const root=process.cwd();
 const readJson=(p)=>JSON.parse(fs.readFileSync(path.join(root,p),"utf8"));
 const ajv=new Ajv({allErrors:true,strict:false});
 
+const eventValidator=ajv.compile(readJson("schemas/event.schema.json"));
 const schemas={
-  events:ajv.compile(readJson("schemas/event.schema.json")),
-  candidates:ajv.compile(readJson("schemas/event.schema.json")),
+  events:eventValidator,
+  candidates:eventValidator,
   sources:ajv.compile(readJson("schemas/source.schema.json")),
   claims:ajv.compile(readJson("schemas/claim.schema.json")),
   evidence:ajv.compile(readJson("schemas/evidence.schema.json")),
