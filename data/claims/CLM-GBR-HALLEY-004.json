@@ -1,0 +1,13 @@
+{
+  "id": "CLM-GBR-HALLEY-004",
+  "subject_id": "EVT-GBR-HALLEY-1066",
+  "statement": "The 1066 comet acquired omen interpretations in narratives surrounding the English succession and Norman conquest.",
+  "claim_type": "interpretation",
+  "epistemic_status": "supported_as_documentary_attestation",
+  "source_refs": [
+    "SRC-GBR-ESA-HALLEY-1066"
+  ],
+  "notes": [
+    "This records a historical interpretation, not evidence that the comet caused any political or military outcome."
+  ]
+}

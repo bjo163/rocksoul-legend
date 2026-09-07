@@ -1,0 +1,23 @@
+{
+  "id": "PLC-GBR-ENGLAND-1066",
+  "name": "England",
+  "place_type": "region",
+  "country": "United Kingdom",
+  "region": "England",
+  "historical_names": [
+    "Kingdom of England"
+  ],
+  "modern_names": [
+    "England"
+  ],
+  "coordinates": null,
+  "summary": "Historical observation context used for the 1066 Halley's Comet case. The celestial event was not geographically confined to England; this place record represents the documentary and narrative observation context preserved in sources such as the Bayeux Tapestry.",
+  "source_refs": [
+    "SRC-GBR-ESA-HALLEY-1066",
+    "SRC-GBR-BAYEUX-HALLEY-1066"
+  ],
+  "uncertainty": [
+    "Modern country normalization is used for repository geography; the 1066 political entity predates the modern United Kingdom.",
+    "The comet itself was a celestial object observable beyond this region."
+  ]
+}

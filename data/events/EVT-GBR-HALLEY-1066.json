@@ -1,0 +1,56 @@
+{
+  "id": "EVT-GBR-HALLEY-1066",
+  "title": "Observed apparition of Halley's Comet in England, spring 1066",
+  "event_type": "astronomical_event",
+  "aliases": [
+    "Halley's Comet 1066 apparition",
+    "1066 comet"
+  ],
+  "summary": "Institutional astronomy and museum sources identify an apparition of Halley's Comet in 1066 and connect it with the comet depicted in the Bayeux Tapestry. ESA gives 24 April 1066 in its historical chronology, while the Bayeux Museum describes the comet passing across the English sky in spring 1066. LEGEND models the astronomical apparition separately from later omen interpretations attached to the event.",
+  "time": {
+    "start": "1066-04-24",
+    "end": "1066-04-24",
+    "precision": "date",
+    "calendar": "Julian-era historical date represented in ISO-like form for repository consistency",
+    "note": "ESA records 24 April 1066; Bayeux Museum gives the broader season 'spring 1066'. The repository preserves that source-level precision difference."
+  },
+  "place_refs": [
+    "PLC-GBR-ENGLAND-1066"
+  ],
+  "artifact_refs": [],
+  "historicity": {
+    "status": "strongly_supported",
+    "confidence": 0.99,
+    "note": "Confidence applies to the 1066 apparition and its identification with Halley's Comet, not to supernatural or political meanings later attached to it."
+  },
+  "claims": [
+    "CLM-GBR-HALLEY-001",
+    "CLM-GBR-HALLEY-002",
+    "CLM-GBR-HALLEY-003",
+    "CLM-GBR-HALLEY-004"
+  ],
+  "source_refs": [
+    "SRC-GBR-NASA-HALLEY",
+    "SRC-GBR-ESA-HALLEY-1066",
+    "SRC-GBR-BAYEUX-HALLEY-1066"
+  ],
+  "evidence_refs": [
+    "EVD-GBR-HALLEY-001",
+    "EVD-GBR-HALLEY-002",
+    "EVD-GBR-HALLEY-003",
+    "EVD-GBR-HALLEY-004"
+  ],
+  "narrative_links": [],
+  "uncertainty": [
+    "Different institutional summaries express the timing at different precision: ESA gives 24 April 1066, while Bayeux Museum states spring 1066.",
+    "The Bayeux Tapestry is evidence for a later preserved interpretation and depiction, not proof that every observer in 1066 shared one omen reading."
+  ],
+  "alternative_interpretations": [
+    "Medieval omen readings are historical interpretations of the apparition and should not be conflated with astronomical causation of political or military outcomes."
+  ],
+  "review": {
+    "status": "canonical",
+    "reviewed_by": "Rocksoul Research evidence review",
+    "note": "Canonical scope covers the astronomical apparition and its documentary depiction; omen meaning is preserved as interpretation, not causal mechanism."
+  }
+}

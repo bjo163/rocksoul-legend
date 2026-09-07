@@ -1,0 +1,14 @@
+{
+  "id": "CLM-GBR-HALLEY-002",
+  "subject_id": "EVT-GBR-HALLEY-1066",
+  "statement": "Institutional sources place the English observation of the 1066 comet in spring 1066; ESA's historical chronology gives 24 April 1066.",
+  "claim_type": "date",
+  "epistemic_status": "supported_as_documentary_attestation",
+  "source_refs": [
+    "SRC-GBR-ESA-HALLEY-1066",
+    "SRC-GBR-BAYEUX-HALLEY-1066"
+  ],
+  "notes": [
+    "The claim preserves source wording rather than pretending all sources state the same precision."
+  ]
+}

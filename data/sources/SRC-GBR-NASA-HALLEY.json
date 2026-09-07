@@ -1,0 +1,14 @@
+{
+  "id": "SRC-GBR-NASA-HALLEY",
+  "title": "1P/Halley",
+  "source_type": "institutional",
+  "creator": "NASA Science",
+  "date": null,
+  "language": "English",
+  "locator": "https://science.nasa.gov/solar-system/comets/1p-halley/",
+  "provenance": "NASA Science reference page for comet 1P/Halley.",
+  "quality": "high",
+  "notes": [
+    "Identifies Halley's Comet as a periodic comet with ancient observations and notes its appearance in the Bayeux Tapestry associated with 1066."
+  ]
+}

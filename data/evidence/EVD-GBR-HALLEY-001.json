@@ -1,0 +1,15 @@
+{
+  "id": "EVD-GBR-HALLEY-001",
+  "claim_id": "CLM-GBR-HALLEY-001",
+  "relation": "supports",
+  "evidence_type": "astronomical",
+  "summary": "NASA and ESA identify the famous 1066 comet apparition as Halley's Comet; NASA also notes its connection to the Bayeux Tapestry.",
+  "source_refs": [
+    "SRC-GBR-NASA-HALLEY",
+    "SRC-GBR-ESA-HALLEY-1066"
+  ],
+  "confidence": 0.99,
+  "limitations": [
+    "Modern identification synthesizes historical observation with reconstructed comet history."
+  ]
+}

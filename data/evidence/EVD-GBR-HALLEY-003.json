@@ -1,0 +1,16 @@
+{
+  "id": "EVD-GBR-HALLEY-003",
+  "claim_id": "CLM-GBR-HALLEY-003",
+  "relation": "supports",
+  "evidence_type": "material",
+  "summary": "NASA, ESA, and the official Bayeux Museum identify the comet depicted in the Bayeux Tapestry with Halley's Comet.",
+  "source_refs": [
+    "SRC-GBR-NASA-HALLEY",
+    "SRC-GBR-ESA-HALLEY-1066",
+    "SRC-GBR-BAYEUX-HALLEY-1066"
+  ],
+  "confidence": 0.98,
+  "limitations": [
+    "The tapestry is a later commemorative representation, not a direct astronomical instrument record."
+  ]
+}

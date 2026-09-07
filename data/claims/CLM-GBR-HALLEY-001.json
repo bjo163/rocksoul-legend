@@ -1,0 +1,13 @@
+{
+  "id": "CLM-GBR-HALLEY-001",
+  "subject_id": "EVT-GBR-HALLEY-1066",
+  "statement": "Halley's Comet appeared in 1066 and is identified in modern institutional astronomy sources with the comet associated with the Bayeux Tapestry.",
+  "claim_type": "event_existence",
+  "epistemic_status": "strongly_supported",
+  "source_refs": [
+    "SRC-GBR-NASA-HALLEY",
+    "SRC-GBR-ESA-HALLEY-1066",
+    "SRC-GBR-BAYEUX-HALLEY-1066"
+  ],
+  "notes": []
+}

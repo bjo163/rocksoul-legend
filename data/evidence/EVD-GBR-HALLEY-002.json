@@ -1,0 +1,15 @@
+{
+  "id": "EVD-GBR-HALLEY-002",
+  "claim_id": "CLM-GBR-HALLEY-002",
+  "relation": "supports",
+  "evidence_type": "chronological",
+  "summary": "ESA records 24 April 1066, while Bayeux Museum independently places the passage in the English sky in spring 1066.",
+  "source_refs": [
+    "SRC-GBR-ESA-HALLEY-1066",
+    "SRC-GBR-BAYEUX-HALLEY-1066"
+  ],
+  "confidence": 0.95,
+  "limitations": [
+    "The two sources use different levels of chronological precision."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "EVD-GBR-HALLEY-004",
+  "claim_id": "CLM-GBR-HALLEY-004",
+  "relation": "contextualizes",
+  "evidence_type": "textual",
+  "summary": "ESA documents medieval omen interpretation around the 1066 apparition, including adverse meaning for Harold and favorable meaning for William in later historical framing.",
+  "source_refs": [
+    "SRC-GBR-ESA-HALLEY-1066"
+  ],
+  "confidence": 0.86,
+  "limitations": [
+    "This evidence supports the existence of an omen narrative, not supernatural causation or universal belief among all observers."
+  ]
+}

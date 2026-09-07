@@ -1,0 +1,15 @@
+{
+  "id": "CLM-GBR-HALLEY-003",
+  "subject_id": "EVT-GBR-HALLEY-1066",
+  "statement": "The Bayeux Tapestry depicts the comet that modern institutional sources identify as Halley's Comet.",
+  "claim_type": "artifact",
+  "epistemic_status": "strongly_supported",
+  "source_refs": [
+    "SRC-GBR-NASA-HALLEY",
+    "SRC-GBR-ESA-HALLEY-1066",
+    "SRC-GBR-BAYEUX-HALLEY-1066"
+  ],
+  "notes": [
+    "The tapestry is used here as documentary/material representation, without modeling it as a separate artifact registry object in v0.1."
+  ]
+}
