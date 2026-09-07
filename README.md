@@ -16,6 +16,14 @@ A provenance-first **Historical & Event Intelligence** repository for tracing re
 
 > **LEGEND starts with evidence of an event—not with the assumption that a story is historically true.**
 
+A source can attest an event without proving every detail.  
+A witness can be close without being infallible.  
+A narrative can resemble an event without proving origin.  
+A text can correspond to history without proving supernatural fulfillment.  
+A later interpretation is not the event itself.
+
+That separation is the foundation of LEGEND.
+
 ## Core question
 
 ```text
