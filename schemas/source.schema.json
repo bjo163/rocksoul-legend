@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://rocksoul.dev/legend/schemas/source.schema.json",
+  "title": "LEGEND Source Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "source_type",
+    "creator",
+    "date",
+    "locator",
+    "provenance",
+    "quality"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^SRC-[A-Z0-9][A-Z0-9-]*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_type": {
+      "enum": [
+        "physical_evidence",
+        "archaeological_record",
+        "epigraphic_record",
+        "contemporary_document",
+        "early_historical_source",
+        "peer_reviewed_scholarship",
+        "university_press",
+        "museum",
+        "archive",
+        "library",
+        "institutional",
+        "popular_secondary",
+        "other"
+      ]
+    },
+    "creator": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "language": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "locator": {
+      "type": "string",
+      "minLength": 1
+    },
+    "provenance": {
+      "type": "string",
+      "minLength": 1
+    },
+    "quality": {
+      "enum": [
+        "primary",
+        "high",
+        "medium",
+        "discovery_only",
+        "unknown"
+      ]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

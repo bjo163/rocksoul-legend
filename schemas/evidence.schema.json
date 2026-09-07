@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://rocksoul.dev/legend/schemas/evidence.schema.json",
+  "title": "LEGEND Evidence Edge",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "claim_id",
+    "relation",
+    "evidence_type",
+    "summary",
+    "source_refs",
+    "confidence"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^EVD-[A-Z0-9][A-Z0-9-]*$"
+    },
+    "claim_id": {
+      "type": "string",
+      "pattern": "^CLM-[A-Z0-9][A-Z0-9-]*$"
+    },
+    "relation": {
+      "enum": [
+        "supports",
+        "contradicts",
+        "contextualizes",
+        "alternative_explanation",
+        "unresolved_uncertainty"
+      ]
+    },
+    "evidence_type": {
+      "enum": [
+        "archaeological",
+        "textual",
+        "epigraphic",
+        "material",
+        "geological",
+        "astronomical",
+        "environmental",
+        "chronological",
+        "geographical",
+        "forensic",
+        "institutional",
+        "scholarly_interpretation",
+        "other"
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_refs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^SRC-[A-Z0-9][A-Z0-9-]*$"
+      }
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

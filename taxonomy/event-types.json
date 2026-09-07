@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.1",
+  "types": [
+    {
+      "code": "E01",
+      "id": "natural_disaster",
+      "label": "Natural Disaster"
+    },
+    {
+      "code": "E02",
+      "id": "astronomical_event",
+      "label": "Astronomical Event"
+    },
+    {
+      "code": "E03",
+      "id": "environmental_change",
+      "label": "Environmental Change"
+    },
+    {
+      "code": "E04",
+      "id": "war_conflict",
+      "label": "War / Conflict"
+    },
+    {
+      "code": "E05",
+      "id": "political_event",
+      "label": "Political Event"
+    },
+    {
+      "code": "E06",
+      "id": "migration",
+      "label": "Migration"
+    },
+    {
+      "code": "E07",
+      "id": "settlement_event",
+      "label": "Settlement Event"
+    },
+    {
+      "code": "E08",
+      "id": "ritual_event",
+      "label": "Ritual Event"
+    },
+    {
+      "code": "E09",
+      "id": "archaeological_event",
+      "label": "Archaeological Event"
+    },
+    {
+      "code": "E10",
+      "id": "discovery_expedition",
+      "label": "Discovery / Expedition"
+    },
+    {
+      "code": "E11",
+      "id": "birth_death",
+      "label": "Birth / Death"
+    },
+    {
+      "code": "E12",
+      "id": "textual_documentary_event",
+      "label": "Textual / Documentary Event"
+    },
+    {
+      "code": "E13",
+      "id": "social_cultural_transition",
+      "label": "Social / Cultural Transition"
+    },
+    {
+      "code": "E14",
+      "id": "unexplained_event",
+      "label": "Unexplained Event"
+    },
+    {
+      "code": "E15",
+      "id": "other",
+      "label": "Other"
+    }
+  ]
+}

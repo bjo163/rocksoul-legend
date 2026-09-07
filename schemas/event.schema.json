@@ -1,0 +1,286 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://rocksoul.dev/legend/schemas/event.schema.json",
+  "title": "LEGEND Event Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "title",
+    "event_type",
+    "time",
+    "summary",
+    "historicity",
+    "place_refs",
+    "artifact_refs",
+    "claims",
+    "source_refs",
+    "evidence_refs",
+    "narrative_links",
+    "uncertainty",
+    "alternative_interpretations",
+    "review"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^EVT-[A-Z0-9][A-Z0-9-]*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "event_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "time": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "start",
+        "end",
+        "precision"
+      ],
+      "properties": {
+        "start": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "end": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "precision": {
+          "enum": [
+            "exact",
+            "date",
+            "year",
+            "year_range",
+            "century",
+            "century_range",
+            "archaeological_phase",
+            "relative",
+            "unknown"
+          ]
+        },
+        "calendar": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "place_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^PLC-[A-Z0-9][A-Z0-9-]*$"
+      }
+    },
+    "artifact_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^ART-[A-Z0-9][A-Z0-9-]*$"
+      }
+    },
+    "historicity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "confidence"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "attested",
+            "strongly_supported",
+            "probable",
+            "plausible",
+            "disputed",
+            "weakly_attested",
+            "unverified",
+            "contradicted",
+            "legendary_only",
+            "indeterminate"
+          ]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^CLM-[A-Z0-9][A-Z0-9-]*$"
+      }
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^SRC-[A-Z0-9][A-Z0-9-]*$"
+      }
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^EVD-[A-Z0-9][A-Z0-9-]*$"
+      }
+    },
+    "narrative_links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "narrative_id",
+          "relation",
+          "status",
+          "confidence",
+          "basis",
+          "counterpoints"
+        ],
+        "properties": {
+          "narrative_id": {
+            "type": "string",
+            "pattern": "^(MYTH|NAR)-[A-Z0-9][A-Z0-9-]*$"
+          },
+          "relation": {
+            "enum": [
+              "associated_with",
+              "possibly_correlates_with",
+              "chronologically_compatible_with",
+              "geographically_compatible_with",
+              "possibly_influenced",
+              "remembered_as",
+              "later_interpreted_as",
+              "caused",
+              "origin_of",
+              "inspired"
+            ]
+          },
+          "status": {
+            "enum": [
+              "hypothesis",
+              "supported",
+              "disputed",
+              "rejected"
+            ]
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "basis": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "enum": [
+                "chronological_match",
+                "geographic_match",
+                "environmental_match",
+                "motif_match",
+                "textual_continuity",
+                "cultural_continuity",
+                "actor_continuity",
+                "artifact_connection",
+                "transmission_plausibility",
+                "competing_explanation"
+              ]
+            }
+          },
+          "counterpoints": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^SRC-[A-Z0-9][A-Z0-9-]*$"
+            }
+          }
+        }
+      }
+    },
+    "uncertainty": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "alternative_interpretations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "candidate",
+            "reviewed",
+            "canonical",
+            "rejected"
+          ]
+        },
+        "reviewed_by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

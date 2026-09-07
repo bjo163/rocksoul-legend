@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://rocksoul.dev/legend/schemas/claim.schema.json",
+  "title": "LEGEND Atomic Claim",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "subject_id",
+    "statement",
+    "claim_type",
+    "epistemic_status",
+    "source_refs"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^CLM-[A-Z0-9][A-Z0-9-]*$"
+    },
+    "subject_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "statement": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_type": {
+      "enum": [
+        "event_existence",
+        "date",
+        "location",
+        "cause",
+        "actor",
+        "artifact",
+        "interpretation",
+        "narrative_connection",
+        "other"
+      ]
+    },
+    "epistemic_status": {
+      "enum": [
+        "supported_as_documentary_attestation",
+        "supported_as_material_attestation",
+        "strongly_supported",
+        "probable",
+        "plausible",
+        "disputed",
+        "unverified",
+        "contradicted",
+        "indeterminate"
+      ]
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^SRC-[A-Z0-9][A-Z0-9-]*$"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
