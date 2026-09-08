@@ -1,0 +1,13 @@
+{
+  "id": "PLC-GBR-LINDOW-MOSS",
+  "name": "Lindow Moss",
+  "place_type": "landscape",
+  "country": "United Kingdom",
+  "region": "Cheshire, England",
+  "historical_names": [],
+  "modern_names": ["Lindow Moss"],
+  "coordinates": null,
+  "summary": "Peat-bog landscape from which Lindow Man was recovered; the depositional context is central to interpretation of the body.",
+  "source_refs": ["SRC-GBR-LINDOW-BRITISH-MUSEUM-REVIEW"],
+  "uncertainty": ["The original Iron Age/Roman-period bog landscape cannot be reconstructed in every detail from the surviving context."]
+}
