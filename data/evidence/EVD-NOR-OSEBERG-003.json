@@ -1,0 +1,10 @@
+{
+  "id": "EVD-NOR-OSEBERG-003",
+  "claim_id": "CLM-NOR-OSEBERG-003",
+  "relation": "unresolved_uncertainty",
+  "evidence_type": "scholarly_interpretation",
+  "summary": "The Oseberg-focused institutional overview explicitly retains uncertainty around the identities and interpretation of the two women.",
+  "source_refs": ["SRC-NOR-OSEBERG-VIKING-HERITAGE"],
+  "confidence": 0.92,
+  "limitations": ["A lack of conclusive identity evidence leaves multiple high-status and ritual-role interpretations open."]
+}
