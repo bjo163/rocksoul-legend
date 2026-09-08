@@ -1,0 +1,10 @@
+{
+  "id": "EVD-GBR-BATH-002",
+  "claim_id": "CLM-GBR-BATH-002",
+  "relation": "supports",
+  "evidence_type": "epigraphic",
+  "summary": "The institutional collection description gives an approximate corpus size of 130 tablets and a second-to-late-fourth-century CE range.",
+  "source_refs": ["SRC-GBR-BATH-ROMAN-BATHS-CURSE-TABLETS"],
+  "confidence": 0.98,
+  "limitations": ["Individual inscriptions vary in date and condition."]
+}
