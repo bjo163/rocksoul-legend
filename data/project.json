@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "repository": "bjo163/rocksoul-legend",
+  "production_origin": "https://rocksoul-legend.vercel.app",
+  "default_ref": "main",
+  "visual_assets": {
+    "hero": { "pack": "cinematic-hero", "asset_id": "evidence-desk" },
+    "method_timeline": { "pack": "data-viz", "asset_id": "evidence-timeline" },
+    "method_matrix": { "pack": "data-viz", "asset_id": "evidence-matrix" },
+    "event_topology": { "pack": "data-viz", "asset_id": "event-topology" },
+    "historicity_band": { "pack": "data-viz", "asset_id": "historicity-band" },
+    "place_material": { "pack": "data-viz", "asset_id": "place-material-context" },
+    "cross_domain": { "pack": "data-viz", "asset_id": "cross-domain-relations" }
+  }
+}
