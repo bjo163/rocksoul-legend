@@ -1,0 +1,18 @@
+{
+  "id": "EVT-LINDOW-MAN-IRON-AGE",
+  "title": "Violent death and bog deposition of Lindow Man",
+  "event_type": "death",
+  "aliases": ["Lindow Man death and deposition"],
+  "summary": "Lindow Man is a preserved bog body recovered from Lindow Moss. Physical investigation supports a violent death followed by deposition in the bog. The exact date and motive remain debated; this EVENT record intentionally does not encode ritual sacrifice as historical fact.",
+  "time": {"start": "2 BCE", "end": "119 CE", "precision": "year_range", "calendar": null, "note": "Broad radiocarbon range reported in British Museum review; spans late Iron Age into Roman-period Britain."},
+  "place_refs": [],
+  "artifact_refs": [],
+  "historicity": {"status": "strongly_supported", "confidence": 0.95, "note": "Confidence covers violent death and bog deposition, not motive."},
+  "claims": [],
+  "source_refs": ["SRC-GBR-LINDOW-BRITISH-MUSEUM-REVIEW"],
+  "evidence_refs": [],
+  "narrative_links": [],
+  "uncertainty": ["The precise dating remains a range.", "The sequence and interpretation of injuries has been debated.", "Ritual sacrifice is a hypothesis, not an EVENT fact."],
+  "alternative_interpretations": ["Ritual killing or sacrifice.", "Execution, homicide, or another violent-death context not demonstrably ritual."],
+  "review": {"status": "canonical", "reviewed_by": "Rocksoul correlation canonicalization review", "note": "Canonical only for material event context: violent death and bog deposition."}
+}
