@@ -20,6 +20,7 @@ import {
   events,
   formatEventWindow,
   getEventBundle,
+  project,
   recordUrl,
   type EventRecord,
   type EvidenceRecord,
@@ -76,7 +77,7 @@ function Hero() {
       <div className="hero-actions"><a href="#events">ENTER EVENT ARCHIVE →</a><span>EVENT ≠ INTERPRETATION</span></div>
     </div>
     <figure className="hero-visual">
-      <MoonWitnessRegistryAssetImage pack="cinematic-hero" assetId="evidence-desk" alt="MoonWitness evidence desk" loading="eager" fetchPriority="high" />
+      <MoonWitnessRegistryAssetImage pack={project.visual_assets.hero.pack} assetId={project.visual_assets.hero.asset_id} alt="MoonWitness evidence desk" loading="eager" fetchPriority="high" />
       <figcaption>ROCKSOUL-ASSETS / PINNED REGISTRY · PROVENANCE FIRST</figcaption>
     </figure>
     <div className="hero-metrics">
@@ -232,8 +233,8 @@ export function App() {
           <div className="dossier-stage"><Dossier event={selected}/></div>
         </div>
       </section>
-      <section id="method" className="split-section"><div><p className="eyebrow">02 / METHOD</p><h2>EVIDENCE BEFORE<br/>INTERPRETATION.</h2><p>LEGEND owns EVENT semantics. Sources attest. Evidence supports, contextualizes, contradicts, or leaves uncertainty unresolved. Later narrative connections never overwrite the event record.</p><div className="rule-box">EVENT → CLAIM → SOURCE → EVIDENCE / COUNTEREVIDENCE → HISTORICITY → UNCERTAINTY</div></div><div className="asset-stack"><MoonWitnessRegistryAssetImage pack="data-viz" assetId="evidence-timeline" alt="Evidence timeline" loading="lazy" decoding="async"/><MoonWitnessRegistryAssetImage pack="data-viz" assetId="evidence-matrix" alt="Evidence matrix" loading="lazy" decoding="async"/></div></section>
-      <section id="trail" className="split-section trail"><div className="asset-stack"><MoonWitnessRegistryAssetImage pack="data-viz" assetId="graph-nodes" alt="Graph node semantics" loading="lazy" decoding="async"/></div><div><p className="eyebrow">03 / EVENT INTELLIGENCE GRAPH</p><h2>THE TRAIL SHOULD<br/>STAY INSPECTABLE.</h2><p>Strong event evidence does not erase uncertainty around motive, identity, chronology, or narrative origin.</p><div className="principles"><span>SIMILARITY ≠ TRANSMISSION</span><span>LATER SOURCE ≠ CONTEMPORARY EVIDENCE</span><span>TRADITION = EVIDENCE OF TRADITION</span><span>UNCERTAINTY = DATA</span></div></div></section>
+      <section id="method" className="split-section"><div><p className="eyebrow">02 / METHOD</p><h2>EVIDENCE BEFORE<br/>INTERPRETATION.</h2><p>LEGEND owns EVENT semantics. Sources attest. Evidence supports, contextualizes, contradicts, or leaves uncertainty unresolved. Later narrative connections never overwrite the event record.</p><div className="rule-box">EVENT → CLAIM → SOURCE → EVIDENCE / COUNTEREVIDENCE → HISTORICITY → UNCERTAINTY</div></div><div className="asset-stack"><MoonWitnessRegistryAssetImage pack={project.visual_assets.method_timeline.pack} assetId={project.visual_assets.method_timeline.asset_id} alt="Evidence timeline" loading="lazy" decoding="async"/><MoonWitnessRegistryAssetImage pack={project.visual_assets.method_matrix.pack} assetId={project.visual_assets.method_matrix.asset_id} alt="Evidence matrix" loading="lazy" decoding="async"/></div></section>
+      <section id="trail" className="split-section trail"><div className="asset-stack"><MoonWitnessRegistryAssetImage pack={project.visual_assets.event_topology.pack} assetId={project.visual_assets.event_topology.asset_id} alt="Event intelligence topology reference" loading="lazy" decoding="async"/></div><div><p className="eyebrow">03 / EVENT INTELLIGENCE GRAPH</p><h2>THE TRAIL SHOULD<br/>STAY INSPECTABLE.</h2><p>Strong event evidence does not erase uncertainty around motive, identity, chronology, or narrative origin.</p><div className="principles"><span>SIMILARITY ≠ TRANSMISSION</span><span>LATER SOURCE ≠ CONTEMPORARY EVIDENCE</span><span>TRADITION = EVIDENCE OF TRADITION</span><span>UNCERTAINTY = DATA</span></div></div></section>
     </main>
     <footer className="legend-footer"><div><MoonWitnessMark/><strong>MOONWITNESS / LEGEND</strong></div><p>Reality first. Interpretation second. Provenance always.</p><span>WHERE REALITY BECOMES STORY.</span></footer>
   </div>
