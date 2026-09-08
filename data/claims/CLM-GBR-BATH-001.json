@@ -1,0 +1,9 @@
+{
+  "id": "CLM-GBR-BATH-001",
+  "subject_id": "EVT-BATH-CURSE-TABLETS",
+  "statement": "Inscribed lead or pewter tablets were deposited in the Sacred Spring at Aquae Sulis during the Roman period.",
+  "claim_type": "event_existence",
+  "epistemic_status": "strongly_supported",
+  "source_refs": ["SRC-GBR-BATH-ROMAN-BATHS-CURSE-TABLETS"],
+  "notes": ["The claim concerns the material deposition practice, not a single uniform motive."]
+}
