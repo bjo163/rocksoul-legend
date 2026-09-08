@@ -1,0 +1,14 @@
+{
+  "id": "EVT-BATH-CURSE-TABLETS",
+  "title": "Deposition of inscribed tablets in the Sacred Spring at Aquae Sulis",
+  "event_type": "ritual_event",
+  "aliases": ["Bath curse-tablet depositions"],
+  "summary": "Across the Roman period, inscribed lead or pewter tablets were rolled or folded and deposited in the Sacred Spring at Aquae Sulis. The surviving corpus includes roughly 130 personal/private prayers, many connected to perceived injustice. This EVENT records the material deposition practice without treating the modern label 'curse' as a complete account of every participant's motive.",
+  "time": {"start": "2nd century CE", "end": "late 4th century CE", "precision": "century_range", "calendar": null, "note": "Range follows the Roman Baths institutional collection description."},
+  "place_refs": [], "artifact_refs": [],
+  "historicity": {"status": "strongly_supported", "confidence": 0.99, "note": "Physical tablets and archaeological context strongly support the deposition practice."},
+  "claims": [], "source_refs": ["SRC-GBR-BATH-ROMAN-BATHS-CURSE-TABLETS"], "evidence_refs": [], "narrative_links": [],
+  "uncertainty": ["Individual tablets differ in wording, date, and motive.", "The modern category 'curse tablet' can obscure prayers for restitution or justice."],
+  "alternative_interpretations": ["Divine-retribution request.", "Private prayer for restitution or justice.", "A broader ritual petition whose intent depends on the individual inscription."],
+  "review": {"status": "canonical", "reviewed_by": "Rocksoul correlation canonicalization review", "note": "Canonical scope is the material/epigraphic deposition practice, not a single reconstructed motive."}
+}
