@@ -316,6 +316,12 @@ export function getEventTopology(event: EventRecord) {
     detail: source.quality,
     external: true,
   }))
+  event.source_refs.forEach((sourceId) => addEdge({
+    id: `${event.id}:direct-source:${sourceId}`,
+    from: event.id,
+    to: sourceId,
+    label: "event_source",
+  }))
 
   event.uncertainty.forEach((item, index) => {
     const id = `${event.id}:uncertainty:${index + 1}`
@@ -342,14 +348,36 @@ export function getEventTopology(event: EventRecord) {
         external: id !== event.id && !event.artifact_refs.includes(id),
       })
     })
-    addEdge({
+    addNode({
       id: relationship.id,
+      kind: "relationship",
+      label: relationship.relation.replaceAll("_", " "),
+      detail: relationship.note ?? undefined,
+      status: relationship.status,
+      confidence: relationship.confidence,
+    })
+    addEdge({
+      id: `${relationship.id}:subject`,
       from: relationship.subject_id,
+      to: relationship.id,
+      label: "relationship",
+      status: relationship.status,
+      confidence: relationship.confidence,
+    })
+    addEdge({
+      id: `${relationship.id}:object`,
+      from: relationship.id,
       to: relationship.object_id,
       label: relationship.relation,
       status: relationship.status,
       confidence: relationship.confidence,
     })
+    relationship.source_refs.forEach((sourceId) => addEdge({
+      id: `${relationship.id}:source:${sourceId}`,
+      from: relationship.id,
+      to: sourceId,
+      label: "sourced_from",
+    }))
   })
 
   event.narrative_links.forEach((link) => {
@@ -370,6 +398,12 @@ export function getEventTopology(event: EventRecord) {
       status: link.status,
       confidence: link.confidence,
     })
+    link.source_refs.forEach((sourceId) => addEdge({
+      id: `${link.narrative_id}:source:${sourceId}`,
+      from: link.narrative_id,
+      to: sourceId,
+      label: "sourced_from",
+    }))
   })
 
   return { nodes: Array.from(nodes.values()), edges }
