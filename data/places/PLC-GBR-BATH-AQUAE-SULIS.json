@@ -1,0 +1,13 @@
+{
+  "id": "PLC-GBR-BATH-AQUAE-SULIS",
+  "name": "Sacred Spring at Aquae Sulis",
+  "place_type": "site",
+  "country": "United Kingdom",
+  "region": "Bath, Somerset",
+  "historical_names": ["Aquae Sulis"],
+  "modern_names": ["Roman Baths, Bath"],
+  "coordinates": null,
+  "summary": "The Sacred Spring at Roman-period Aquae Sulis where inscribed lead or pewter tablets were deposited.",
+  "source_refs": ["SRC-GBR-BATH-ROMAN-BATHS-CURSE-TABLETS"],
+  "uncertainty": ["Individual tablet find-spots and depositional episodes span the Roman-period use of the spring."]
+}
