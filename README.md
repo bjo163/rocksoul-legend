@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="https://raw.githubusercontent.com/bjo163/rocksoul-assets/main/moonwitness/brand/logo-horizontal.svg" alt="MoonWitness" width="380" />
+
 # LEGEND
 
 ## WHERE REALITY BECOMES STORY
@@ -18,10 +20,12 @@ A provenance-first **Historical & Event Intelligence** repository for reconstruc
 ![Branch](https://img.shields.io/badge/branch-main-111111)
 ![Domain](https://img.shields.io/badge/domain-EVENT-6F6F6F)
 ![Method](https://img.shields.io/badge/method-provenance--first-B43A32)
+![Design](https://img.shields.io/badge/design-rocksoul--assets-6C63FF)
+![Console](https://img.shields.io/badge/console-rocksoul--crayon-2E8B57)
 
 <br/>
 
-[Architecture](#event-intelligence-graph) · [Canonical cases](#canonical-event-set) · [Shared proof](#four-way-proof-case) · [Documentation](#documentation)
+[Architecture](#event-intelligence-graph) · [Canonical cases](#canonical-event-set) · [Shared proof](#four-way-proof-case) · [Documentation](#documentation) · [Assets](https://github.com/bjo163/rocksoul-assets) · [Console](https://github.com/bjo163/rocksoul-crayon)
 
 </div>
 
@@ -36,6 +40,18 @@ A text can correspond to history without proving supernatural fulfillment.
 A later interpretation is not the event itself.
 
 That separation is the foundation of LEGEND.
+
+## Visual + console boundary
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/bjo163/rocksoul-assets/main/moonwitness/ui/v2/24-resources.svg" alt="Rocksoul resource navigation" width="860" />
+
+</div>
+
+- **`rocksoul-assets`** owns the visual language, shared application-shell references, icons, dashboard components, data-viz, states, and motion.
+- **`rocksoul-crayon`** is the operational console that exposes LEGEND through shared AutoMenu / resource navigation.
+- **LEGEND remains canonical owner of EVENT data and event semantics.**
 
 ## Core question
 
@@ -83,15 +99,19 @@ flowchart LR
 
 ## MoonWitness / Rocksoul research map
 
-| Repository | Domain | Core question | Mantra |
-|---|---|---|---|
-| [`rocksoul-mftl`](https://github.com/bjo163/rocksoul-mftl) | STORY | What was told? | TRACE THE STORY. |
-| **`rocksoul-legend`** | EVENT | What happened? | TRACE THE EVENT. |
-| [`rocksoul-superhero`](https://github.com/bjo163/rocksoul-superhero) | PERSON | Who was involved? | TRACE THE PERSON. |
-| [`rocksoul-rgbl`](https://github.com/bjo163/rocksoul-rgbl) | TEXT | What does the exact text say? | TRACE THE TEXT. |
-| [`rocksoul-aws`](https://github.com/bjo163/rocksoul-aws) | LAW | Was it allowed? | TRACE THE LAW. |
+| Repository | Layer | Core question / role |
+|---|---|---|
+| [`rocksoul-assets`](https://github.com/bjo163/rocksoul-assets) | DESIGN | How should the ecosystem look? |
+| [`rocksoul-crayon`](https://github.com/bjo163/rocksoul-crayon) | CONSOLE | How do operators work across it? |
+| [`rocksoul-mftl`](https://github.com/bjo163/rocksoul-mftl) | STORY | What was told? |
+| **`rocksoul-legend`** | EVENT | What happened? |
+| [`rocksoul-superhero`](https://github.com/bjo163/rocksoul-superhero) | PERSON | Who was involved? |
+| [`rocksoul-rgbl`](https://github.com/bjo163/rocksoul-rgbl) | TEXT | What does the exact text say? |
+| [`rocksoul-aws`](https://github.com/bjo163/rocksoul-aws) | LAW | Was it allowed? |
 
 ```text
+DESIGN  → ASSETS
+CONSOLE → CRAYON
 STORY   → MFTL
 EVENT   → LEGEND
 PERSON  → SUPERHERO
@@ -206,6 +226,8 @@ rocksoul-legend/
 ---
 
 <div align="center">
+
+<img src="https://raw.githubusercontent.com/bjo163/rocksoul-assets/main/moonwitness/brand/rocksoul-lockup.svg" alt="Rocksoul" width="480" />
 
 ## **TRACE THE EVENT.**
 
