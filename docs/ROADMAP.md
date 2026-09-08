@@ -31,6 +31,21 @@
 - [x] UI contract audit, browser smoke, and axe accessibility CI gate
 - [x] Bath, Lindow Man, and Oseberg upgraded from source-only records to explicit claim/evidence/place/artifact graphs
 
+## v0.4 — Complete visual event intelligence
+
+- [x] Project-driven UI navigation, hero copy, method chain, principles, and footer contract
+- [x] Live EVENT topology derived from canonical JSON
+- [x] First-class uncertainty and alternative-interpretation nodes
+- [x] Every source reference connected to a visual provenance path
+- [x] Historicity confidence + uncertainty band
+- [x] Evidence and relationship confidence meters
+- [x] Corpus-wide event type distribution and confidence overview
+- [x] Full canonical field inspector for event and subordinate records
+- [x] Narrative basis and counterpoints visible alongside association confidence
+- [x] Build-generated sitemap, robots, canonical and social metadata
+- [x] Reduced-motion-aware SPA navigation and URL/metadata synchronization
+- [x] Rocksoul data-viz source assets and shared EVENT components promoted through dev → main
+
 ## Boundary
 
 The UI is a **read-only projection** of repository-owned EVENT intelligence. It does not introduce a database, mutate canonical research state, duplicate foreign domain objects, or turn LEGEND into an operational console. `rocksoul-crayon` remains the authenticated cross-resource console.
