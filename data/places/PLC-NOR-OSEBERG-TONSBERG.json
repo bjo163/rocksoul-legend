@@ -1,0 +1,13 @@
+{
+  "id": "PLC-NOR-OSEBERG-TONSBERG",
+  "name": "Oseberg burial site near Tønsberg",
+  "place_type": "site",
+  "country": "Norway",
+  "region": "Vestfold / Tønsberg",
+  "historical_names": [],
+  "modern_names": ["Oseberg"],
+  "coordinates": null,
+  "summary": "The Oseberg mound and ship-burial context near Tønsberg, excavated in the early twentieth century.",
+  "source_refs": ["SRC-NOR-OSEBERG-VIKING-HERITAGE"],
+  "uncertainty": ["The burial context is secure while the identities and exact social roles of the two women remain unresolved."]
+}
