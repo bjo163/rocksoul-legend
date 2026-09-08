@@ -1,0 +1,9 @@
+{
+  "id": "CLM-NOR-OSEBERG-001",
+  "subject_id": "EVT-OSEBERG-SHIP-BURIAL",
+  "statement": "The Oseberg ship was used in a richly furnished burial dated to 834 CE near Tønsberg.",
+  "claim_type": "event_existence",
+  "epistemic_status": "strongly_supported",
+  "source_refs": ["SRC-NOR-OSEBERG-VIKING-HERITAGE"],
+  "notes": ["The ship itself predates its use in the burial."]
+}
