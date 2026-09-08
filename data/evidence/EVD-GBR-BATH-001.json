@@ -1,0 +1,10 @@
+{
+  "id": "EVD-GBR-BATH-001",
+  "claim_id": "CLM-GBR-BATH-001",
+  "relation": "supports",
+  "evidence_type": "archaeological",
+  "summary": "The Roman Baths collection records inscribed tablets recovered from the Sacred Spring depositional context.",
+  "source_refs": ["SRC-GBR-BATH-ROMAN-BATHS-CURSE-TABLETS"],
+  "confidence": 0.99,
+  "limitations": ["The deposits represent multiple episodes rather than one single event moment."]
+}
