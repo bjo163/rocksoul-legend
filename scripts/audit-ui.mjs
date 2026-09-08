@@ -16,7 +16,7 @@ for(const component of ["DossierHeader","EvidenceMatrix","ProvenanceRail","Obser
 }
 if(/raw\.githubusercontent\.com\/bjo163\/rocksoul-assets\/main/.test(app+eventsSource)) fail("runtime asset URL tracks rocksoul-assets/main instead of the pinned registry")
 if(/blob\/dev\/data\//.test(app+eventsSource)) fail("production provenance points to dev")
-if(!String(pkg.dependencies["@rocksoul/ui"]).includes("#d5c59c28c9ed86b01ee3752ec868429ec5e6ce0a")) fail("@rocksoul/ui is not pinned to the reviewed commit")
+if(!String(pkg.dependencies["@rocksoul/ui"]).includes("#809edd1b79ff21aa7ddccd451e7889988be98380")) fail("@rocksoul/ui is not pinned to the reviewed commit")
 if(!app.includes("aria-pressed")) fail("filter/selection state is not exposed semantically")
 if(!app.includes("skip-link")) fail("skip link missing")
 if(!styles.includes("min-height:44px")) fail("44px touch target contract missing")
