@@ -1,3 +1,4 @@
+import { moonWitnessAssets, type MoonWitnessAssetRegistryPackId } from "@rocksoul/ui"
 import corpusIndex from "../data/index.json"
 import projectConfig from "../data/project.json"
 import eventTaxonomy from "../taxonomy/event-types.json"
@@ -152,7 +153,27 @@ export const evidenceById = new Map(evidence.map((item) => [item.id, item]))
 export const placeById = new Map(places.map((item) => [item.id, item]))
 export const artifactById = new Map(artifacts.map((item) => [item.id, item]))
 
-export const project = projectConfig
+function registryPackId(value: string): MoonWitnessAssetRegistryPackId {
+  if (!(value in moonWitnessAssets.packs)) throw new Error(`Unknown MoonWitness registry asset pack: ${value}`)
+  return value as MoonWitnessAssetRegistryPackId
+}
+
+function registryAsset<T extends { pack: string; asset_id: string }>(asset: T) {
+  return { ...asset, pack: registryPackId(asset.pack) }
+}
+
+export const project = {
+  ...projectConfig,
+  visual_assets: {
+    hero: registryAsset(projectConfig.visual_assets.hero),
+    method_timeline: registryAsset(projectConfig.visual_assets.method_timeline),
+    method_matrix: registryAsset(projectConfig.visual_assets.method_matrix),
+    event_topology: registryAsset(projectConfig.visual_assets.event_topology),
+    historicity_band: registryAsset(projectConfig.visual_assets.historicity_band),
+    place_material: registryAsset(projectConfig.visual_assets.place_material),
+    cross_domain: registryAsset(projectConfig.visual_assets.cross_domain),
+  },
+}
 export const eventTypeLabel: Record<string, string> = Object.fromEntries(
   eventTaxonomy.types.map((item) => [item.id, item.label]),
 )
