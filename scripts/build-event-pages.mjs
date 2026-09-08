@@ -5,7 +5,8 @@ const root=process.cwd()
 const dist=path.join(root,"dist")
 const base=fs.readFileSync(path.join(dist,"index.html"),"utf8")
 const eventDir=path.join(root,"data/events")
-const canonicalBase="https://rocksoul-legend.vercel.app"
+const project=JSON.parse(fs.readFileSync(path.join(root,"data/project.json"),"utf8"))
+const canonicalBase=project.production_origin.replace(/\/$/,"")
 
 function esc(value){
   return String(value).replaceAll("&","&amp;").replaceAll('"',"&quot;").replaceAll("<","&lt;").replaceAll(">","&gt;")
