@@ -1,0 +1,9 @@
+{
+  "id": "CLM-GBR-LINDOW-001",
+  "subject_id": "EVT-LINDOW-MAN-IRON-AGE",
+  "statement": "Physical investigation of Lindow Man supports a violent death followed by deposition in Lindow Moss.",
+  "claim_type": "event_existence",
+  "epistemic_status": "strongly_supported",
+  "source_refs": ["SRC-GBR-LINDOW-BRITISH-MUSEUM-REVIEW"],
+  "notes": ["The claim is intentionally narrower than any proposed ritual motive."]
+}
