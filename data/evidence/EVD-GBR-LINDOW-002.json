@@ -1,0 +1,10 @@
+{
+  "id": "EVD-GBR-LINDOW-002",
+  "claim_id": "CLM-GBR-LINDOW-002",
+  "relation": "supports",
+  "evidence_type": "chronological",
+  "summary": "Radiocarbon evidence summarized by the British Museum supports a broad date range rather than a single exact date.",
+  "source_refs": ["SRC-GBR-LINDOW-BRITISH-MUSEUM-REVIEW"],
+  "confidence": 0.9,
+  "limitations": ["The range spans the late Iron Age into Roman-period Britain."]
+}
