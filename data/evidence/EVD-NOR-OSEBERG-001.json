@@ -1,0 +1,10 @@
+{
+  "id": "EVD-NOR-OSEBERG-001",
+  "claim_id": "CLM-NOR-OSEBERG-001",
+  "relation": "supports",
+  "evidence_type": "archaeological",
+  "summary": "The Oseberg heritage source describes the excavated ship-burial context and its 834 CE burial date.",
+  "source_refs": ["SRC-NOR-OSEBERG-VIKING-HERITAGE"],
+  "confidence": 0.99,
+  "limitations": ["The heritage overview is an institutional synthesis rather than a full excavation report."]
+}
