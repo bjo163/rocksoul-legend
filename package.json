@@ -5,7 +5,8 @@
   "type": "module",
   "description": "Historical & Event Intelligence for the Rocksoul Research ecosystem.",
   "engines": {
-    "node": ">=22"
+    "node": ">=22",
+    "npm": ">=11.6.0"
   },
   "scripts": {
     "dev": "vite",
