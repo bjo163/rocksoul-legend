@@ -1,0 +1,9 @@
+{
+  "id": "CLM-GBR-BATH-002",
+  "subject_id": "EVT-BATH-CURSE-TABLETS",
+  "statement": "The surviving Bath corpus contains roughly 130 inscribed tablets and spans from the second to the late fourth century CE.",
+  "claim_type": "artifact",
+  "epistemic_status": "supported_as_material_attestation",
+  "source_refs": ["SRC-GBR-BATH-ROMAN-BATHS-CURSE-TABLETS"],
+  "notes": ["Corpus size and date range follow the Roman Baths institutional collection description."]
+}
