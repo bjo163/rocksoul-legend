@@ -16,6 +16,18 @@ jobs:
           node-version: 22
       - run: npm install --global npm@11.6.0
       - run: npm install
-      - run: npm run build
+      - run: npm run ci
       - name: Ensure generated index is current
         run: git diff --exit-code -- data/index.json
+      - name: Browser smoke
+        run: |
+          npm run preview -- --host 127.0.0.1 > /tmp/legend-preview.log 2>&1 &
+          for i in {1..30}; do
+            if curl -fsS http://127.0.0.1:4173/ > /tmp/legend-root.html; then break; fi
+            sleep 1
+          done
+          grep -q "LEGEND" /tmp/legend-root.html
+          curl -fsS http://127.0.0.1:4173/events/EVT-JERUSALEM-SECOND-TEMPLE-DESTRUCTION-70/ | grep -q "Jerusalem"
+      - name: Axe accessibility gate
+        run: |
+          npx axe http://127.0.0.1:4173/ http://127.0.0.1:4173/events/EVT-JERUSALEM-SECOND-TEMPLE-DESTRUCTION-70/ --exit --chrome-options=no-sandbox,disable-dev-shm-usage
