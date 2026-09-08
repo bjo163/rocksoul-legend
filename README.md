@@ -25,11 +25,31 @@ A provenance-first **Historical & Event Intelligence** repository for reconstruc
 
 <br/>
 
-[Architecture](#event-intelligence-graph) · [Canonical cases](#canonical-event-set) · [Shared proof](#four-way-proof-case) · [Documentation](#documentation) · [Assets](https://github.com/bjo163/rocksoul-assets) · [Console](https://github.com/bjo163/rocksoul-crayon)
+[Architecture](#event-intelligence-graph) · [Canonical cases](#canonical-event-set) · [Shared proof](#shared-five-domain-proof) · [Documentation](#documentation) · [Assets](https://github.com/bjo163/rocksoul-assets) · [Console](https://github.com/bjo163/rocksoul-crayon)
 
 </div>
 
+
 ---
+<!-- ROCKSOUL_FIELD_NOTE_START -->
+<div align="center">
+
+### **REALITY LEAVES RECEIPTS.**
+
+`/// MOONWITNESS FIELD NOTE ///`
+
+</div>
+
+> History is messy. The evidence chain should not be. LEGEND keeps event reconstruction separate from later storytelling, ideology, memory, and theological interpretation.
+
+```text
+EVENT → SOURCE → EVIDENCE → COUNTEREVIDENCE → UNCERTAINTY
+```
+
+**NO VIBES-ONLY CLAIMS · NO SOURCELESS LORE · UNCERTAINTY IS DATA**
+
+<!-- ROCKSOUL_FIELD_NOTE_END -->
+
 
 > **LEGEND starts with evidence of an event—not with the assumption that a story is historically true.**
 
@@ -123,7 +143,7 @@ LAW     → AWS
 
 [Read the interoperability contract →](docs/INTEROP.md)
 
-## Four-way proof case
+## Shared five-domain proof
 
 ### **CASE 001 — JERUSALEM 70 CE**
 
@@ -150,7 +170,7 @@ LEGEND's foundation has been tested across multiple evidence patterns:
 | **Guatavita** | ritual event | archaeology + artifact + colonial text | canonical, explicit counterevidence |
 | **Krakatau 1883** | natural disaster | geology + tsunami + institutional record | canonical |
 | **Halley 1066** | astronomical event | astronomy + museum/documentary record | canonical |
-| **Jerusalem 70 CE** | war/conflict | near-contemporary history + museum synthesis + text comparison | canonical, four-way integration |
+| **Jerusalem 70 CE** | war/conflict | near-contemporary history + museum synthesis + text comparison | canonical, five-domain integration |
 
 Current canonical graph:
 
