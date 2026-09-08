@@ -1,0 +1,9 @@
+{
+  "id": "CLM-NOR-OSEBERG-002",
+  "subject_id": "EVT-OSEBERG-SHIP-BURIAL",
+  "statement": "The burial contained the remains of two women together with extensive grave goods.",
+  "claim_type": "artifact",
+  "epistemic_status": "supported_as_material_attestation",
+  "source_refs": ["SRC-NOR-OSEBERG-VIKING-HERITAGE"],
+  "notes": ["This claim does not identify either woman."]
+}
