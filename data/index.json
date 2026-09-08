@@ -4,11 +4,11 @@
     "canonical_events": 7,
     "candidates": 0,
     "sources": 18,
-    "claims": 19,
-    "evidence_edges": 21,
+    "claims": 28,
+    "evidence_edges": 30,
     "relationships": 4,
-    "places": 4,
-    "artifacts": 1,
+    "places": 7,
+    "artifacts": 4,
     "event_types": 15
   }
 }
