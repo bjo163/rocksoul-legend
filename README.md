@@ -17,7 +17,7 @@ A provenance-first **Historical & Event Intelligence** repository for reconstruc
 <br/>
 
 [![Validation](https://github.com/bjo163/rocksoul-legend/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/bjo163/rocksoul-legend/actions/workflows/validate.yml)
-![Branches](https://img.shields.io/badge/branches-main%20%2B%20dev-111111)
+![Branches](https://img.shields.io/badge/branches-main--only-111111)
 ![Domain](https://img.shields.io/badge/domain-EVENT-6F6F6F)
 ![Method](https://img.shields.io/badge/method-provenance--first-B43A32)
 ![Design](https://img.shields.io/badge/design-rocksoul--assets-6C63FF)
@@ -266,10 +266,9 @@ rocksoul-legend/
 ## Branch model
 
 ```text
-main  ← stable / release
-dev   ← all development
+main  ← stable / development / maintenance / release
 ```
 
-Development lands in `dev`. Release promotion is only `dev → main`. Noncanonical remote branches are removed automatically by the branch-policy workflow.
+All repository work lands directly on `main`. Persistent development or release branches are not part of the repository contract; release automation may create tags/releases but not additional branches.
 
 [Read the branching contract →](docs/BRANCHING.md)
