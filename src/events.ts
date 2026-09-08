@@ -1,4 +1,6 @@
 import corpusIndex from "../data/index.json"
+import projectConfig from "../data/project.json"
+import eventTaxonomy from "../taxonomy/event-types.json"
 
 export interface EventTime {
   start: string | null
@@ -150,13 +152,10 @@ export const evidenceById = new Map(evidence.map((item) => [item.id, item]))
 export const placeById = new Map(places.map((item) => [item.id, item]))
 export const artifactById = new Map(artifacts.map((item) => [item.id, item]))
 
-export const eventTypeLabel: Record<string, string> = {
-  astronomical_event: "Astronomical",
-  birth_death: "Birth / death",
-  natural_disaster: "Natural disaster",
-  ritual_event: "Ritual event",
-  war_conflict: "War / conflict",
-}
+export const project = projectConfig
+export const eventTypeLabel: Record<string, string> = Object.fromEntries(
+  eventTaxonomy.types.map((item) => [item.id, item.label]),
+)
 
 export function formatEventWindow(event: EventRecord) {
   const { start, end, precision } = event.time
@@ -218,8 +217,8 @@ export function eventSearchText(event: EventRecord) {
   ].join(" ").toLowerCase()
 }
 
-export const LEGEND_REPO_REF = import.meta.env.VITE_LEGEND_GIT_REF || "main"
+export const LEGEND_REPO_REF = import.meta.env.VITE_LEGEND_GIT_REF || project.default_ref
 
 export function recordUrl(kind: "sources" | "claims" | "evidence" | "places" | "artifacts" | "relationships" | "events", id: string) {
-  return `https://github.com/bjo163/rocksoul-legend/blob/${encodeURIComponent(LEGEND_REPO_REF)}/data/${kind}/${id}.json`
+  return `https://github.com/${project.repository}/blob/${encodeURIComponent(LEGEND_REPO_REF)}/data/${kind}/${id}.json`
 }
