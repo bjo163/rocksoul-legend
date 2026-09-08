@@ -9,6 +9,8 @@ const fail=(message)=>{ console.error("UI CONTRACT INVALID:",message); process.e
 const app=read("src/App.tsx")
 const eventsSource=read("src/events.ts")
 const styles=read("src/styles.css")
+const html=read("index.html")
+const vercel=readJson("vercel.json")
 const pkg=readJson("package.json")
 const project=readJson("data/project.json")
 const taxonomy=readJson("taxonomy/event-types.json")
@@ -28,6 +30,10 @@ if(!eventsSource.includes("eventTaxonomy.types.map")) fail("event type labels mu
 if(!taxonomy.types?.length) fail("event taxonomy is empty")
 if(!app.includes("skip-link")) fail("skip link missing")
 if(!styles.includes("min-height:44px")) fail("44px touch target contract missing")
+if(!html.includes("__LEGEND_PRODUCTION_ORIGIN__") || html.includes("https://rocksoul-legend.vercel.app")) fail("HTML origin must resolve from project config at build time")
+if(!vercel.rewrites?.some((item)=>item.source==="/events/:id" && item.destination==="/events/:id/index.html")) fail("event permalink rewrite missing")
+const securityHeaders=new Map((vercel.headers?.find((item)=>item.source==="/(.*)")?.headers??[]).map((item)=>[item.key,item.value]))
+for(const key of ["Content-Security-Policy","X-Content-Type-Options","X-Frame-Options","Referrer-Policy","Permissions-Policy"]){ if(!securityHeaders.has(key)) fail("missing production security header: "+key) }
 
 const eventDir=path.join(root,"data/events")
 for(const file of fs.readdirSync(eventDir).filter(x=>x.endsWith(".json"))){
