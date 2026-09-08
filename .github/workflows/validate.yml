@@ -21,7 +21,7 @@ jobs:
       - run: npm install --global npm@11.6.0
       - run: npm ci
       - name: Production dependency audit
-        run: npm audit --omit=dev --audit-level=high
+        run: npm audit --omit=dev --audit-level=moderate
       - run: npm run ci
       - name: Ensure generated index is current
         run: git diff --exit-code -- data/index.json
