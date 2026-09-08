@@ -1,0 +1,10 @@
+{
+  "id": "EVD-GBR-LINDOW-003",
+  "claim_id": "CLM-GBR-LINDOW-003",
+  "relation": "unresolved_uncertainty",
+  "evidence_type": "scholarly_interpretation",
+  "summary": "The British Museum review treats ritual-sacrifice interpretation as contested and documents changing scholarly readings of the body.",
+  "source_refs": ["SRC-GBR-LINDOW-BRITISH-MUSEUM-REVIEW"],
+  "confidence": 0.9,
+  "limitations": ["Motive is not directly observable from the surviving body and context."]
+}
