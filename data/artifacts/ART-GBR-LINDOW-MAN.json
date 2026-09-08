@@ -1,0 +1,20 @@
+{
+  "id": "ART-GBR-LINDOW-MAN",
+  "title": "Lindow Man",
+  "artifact_type": "other",
+  "culture": null,
+  "date": {
+    "label": "2 BCE to 119 CE radiocarbon range",
+    "precision": "range"
+  },
+  "discovery": {
+    "year": null,
+    "place_id": "PLC-GBR-LINDOW-MOSS",
+    "note": "Recovered from peat at Lindow Moss; the British Museum review documents the discovery and subsequent investigation."
+  },
+  "repository": "British Museum",
+  "registration": null,
+  "summary": "Preserved human remains whose physical investigation supports violent death followed by deposition in a bog.",
+  "source_refs": ["SRC-GBR-LINDOW-BRITISH-MUSEUM-REVIEW"],
+  "uncertainty": ["The sequence of injuries and motive for the death remain debated.", "Ritual sacrifice is an interpretation rather than an established event fact."]
+}
