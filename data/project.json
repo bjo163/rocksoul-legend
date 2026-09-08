@@ -4,12 +4,81 @@
   "production_origin": "https://rocksoul-legend.vercel.app",
   "default_ref": "main",
   "visual_assets": {
-    "hero": { "pack": "cinematic-hero", "asset_id": "evidence-desk" },
-    "method_timeline": { "pack": "data-viz", "asset_id": "evidence-timeline" },
-    "method_matrix": { "pack": "data-viz", "asset_id": "evidence-matrix" },
-    "event_topology": { "pack": "data-viz", "asset_id": "event-topology" },
-    "historicity_band": { "pack": "data-viz", "asset_id": "historicity-band" },
-    "place_material": { "pack": "data-viz", "asset_id": "place-material-context" },
-    "cross_domain": { "pack": "data-viz", "asset_id": "cross-domain-relations" }
+    "hero": {
+      "pack": "cinematic-hero",
+      "asset_id": "evidence-desk"
+    },
+    "method_timeline": {
+      "pack": "data-viz",
+      "asset_id": "evidence-timeline"
+    },
+    "method_matrix": {
+      "pack": "data-viz",
+      "asset_id": "evidence-matrix"
+    },
+    "event_topology": {
+      "pack": "data-viz",
+      "asset_id": "event-topology"
+    },
+    "historicity_band": {
+      "pack": "data-viz",
+      "asset_id": "historicity-band"
+    },
+    "place_material": {
+      "pack": "data-viz",
+      "asset_id": "place-material-context"
+    },
+    "cross_domain": {
+      "pack": "data-viz",
+      "asset_id": "cross-domain-relations"
+    }
+  },
+  "ui": {
+    "product_name": "LEGEND",
+    "product_descriptor": "MOONWITNESS / EVENT INTELLIGENCE",
+    "navigation": [
+      {
+        "id": "events",
+        "label": "EVENTS"
+      },
+      {
+        "id": "method",
+        "label": "METHOD"
+      },
+      {
+        "id": "visuals",
+        "label": "VISUALS"
+      },
+      {
+        "id": "trail",
+        "label": "TRAIL"
+      }
+    ],
+    "hero": {
+      "eyebrow": "LEGEND / CANONICAL EVENT ARCHIVE",
+      "headline": "REALITY",
+      "accent": "LEAVES RECEIPTS.",
+      "body": "Trace the event. Inspect the source chain. Keep uncertainty visible. LEGEND reconstructs what happened without turning resemblance into causation or later interpretation into historical fact.",
+      "cta": "ENTER EVENT ARCHIVE",
+      "guardrail": "EVENT ≠ INTERPRETATION"
+    },
+    "method_chain": [
+      "EVENT",
+      "CLAIM",
+      "SOURCE",
+      "EVIDENCE / COUNTEREVIDENCE",
+      "HISTORICITY",
+      "UNCERTAINTY"
+    ],
+    "principles": [
+      "SIMILARITY ≠ TRANSMISSION",
+      "LATER SOURCE ≠ CONTEMPORARY EVIDENCE",
+      "TRADITION = EVIDENCE OF TRADITION",
+      "UNCERTAINTY = DATA"
+    ],
+    "footer": {
+      "statement": "Reality first. Interpretation second. Provenance always.",
+      "boundary": "WHERE REALITY BECOMES STORY."
+    }
   }
 }
