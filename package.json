@@ -1,34 +1,38 @@
 {
   "name": "rocksoul-legend",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
   "description": "Historical & Event Intelligence for the Rocksoul Research ecosystem.",
   "engines": {
-    "node": ">=22",
+    "node": "22.x",
     "npm": ">=11.6.0"
   },
   "scripts": {
     "dev": "vite",
+    "preview": "vite preview",
     "validate": "node scripts/validate.mjs",
     "index": "node scripts/build-index.mjs",
+    "audit:ui": "node scripts/audit-ui.mjs",
     "typecheck": "tsc --noEmit",
     "build:data": "npm run validate && npm run index",
-    "build": "npm run build:data && npm run typecheck && vite build",
+    "build:web": "vite build && node scripts/build-event-pages.mjs",
+    "build": "npm run build:data && npm run audit:ui && npm run typecheck && npm run build:web",
     "ci": "npm run build"
   },
   "dependencies": {
-    "@rocksoul/ui": "github:bjo163/rocksoul-ui#main",
-    "ajv": "^8.17.1",
+    "@rocksoul/ui": "github:bjo163/rocksoul-ui#d5c59c28c9ed86b01ee3752ec868429ec5e6ce0a",
+    "ajv": "8.17.1",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
   "devDependencies": {
-    "@types/react": "^19.2.0",
-    "@types/react-dom": "^19.2.0",
-    "@vitejs/plugin-react": "^5.0.0",
-    "typescript": "^5.8.3",
-    "vite": "^8.2.2"
+    "@axe-core/cli": "4.13.0",
+    "@types/react": "19.2.0",
+    "@types/react-dom": "19.2.0",
+    "@vitejs/plugin-react": "5.0.0",
+    "typescript": "5.8.3",
+    "vite": "8.2.2"
   },
   "packageManager": "npm@11.6.0"
 }
