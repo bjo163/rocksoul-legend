@@ -3,10 +3,12 @@ import path from "node:path"
 
 const root = process.cwd()
 const dist = path.join(root, "dist")
-const base = fs.readFileSync(path.join(dist, "index.html"), "utf8")
+const rawBase = fs.readFileSync(path.join(dist, "index.html"), "utf8")
 const eventDir = path.join(root, "data/events")
 const project = JSON.parse(fs.readFileSync(path.join(root, "data/project.json"), "utf8"))
 const canonicalBase = project.production_origin.replace(/\/$/, "")
+const base = rawBase.replaceAll("__LEGEND_PRODUCTION_ORIGIN__", canonicalBase)
+fs.writeFileSync(path.join(dist, "index.html"), base)
 
 function esc(value) {
   return String(value)
