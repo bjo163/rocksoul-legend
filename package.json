@@ -21,7 +21,7 @@
     "ci": "npm run build"
   },
   "dependencies": {
-    "@rocksoul/ui": "github:bjo163/rocksoul-ui#809edd1b79ff21aa7ddccd451e7889988be98380",
+    "@rocksoul/ui": "github:bjo163/rocksoul-ui#6a98ce0d5f5be60d4744f073837cd754639ea044",
     "ajv": "8.17.1",
     "react": "19.2.8",
     "react-dom": "19.2.8"
