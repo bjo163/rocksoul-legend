@@ -1,0 +1,10 @@
+{
+  "id": "EVD-NOR-OSEBERG-002",
+  "claim_id": "CLM-NOR-OSEBERG-002",
+  "relation": "supports",
+  "evidence_type": "material",
+  "summary": "The excavated burial assemblage includes two female remains and extensive grave goods associated with the ship.",
+  "source_refs": ["SRC-NOR-OSEBERG-VIKING-HERITAGE"],
+  "confidence": 0.99,
+  "limitations": ["Material association does not establish the women's precise identities or relationship."]
+}
