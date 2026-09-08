@@ -1,0 +1,14 @@
+{
+  "id": "EVT-OSEBERG-SHIP-BURIAL",
+  "title": "Oseberg ship burial",
+  "event_type": "ritual_event",
+  "aliases": ["Oseberg burial", "Oseberg ship grave"],
+  "summary": "The Oseberg ship was used in a richly furnished burial in the early ninth century near Tønsberg, Norway. The burial contained the remains of two women and extensive grave goods. This EVENT records the burial context while leaving the women's exact identities, relationship, status, and any specific magical or cultic role unresolved.",
+  "time": {"start": "834 CE", "end": "834 CE", "precision": "year", "calendar": null, "note": "Burial year follows the Oseberg-focused heritage source; the ship itself was built earlier."},
+  "place_refs": [], "artifact_refs": [],
+  "historicity": {"status": "strongly_supported", "confidence": 0.99, "note": "The excavated ship burial and two female remains are strongly supported; identity and role interpretations are separate."},
+  "claims": [], "source_refs": ["SRC-NOR-OSEBERG-VIKING-HERITAGE"], "evidence_refs": [], "narrative_links": [],
+  "uncertainty": ["The exact historical identities of the two women are unknown.", "Their relationship and social or ritual roles are unresolved.", "Specific cultic or magical interpretations are not encoded as EVENT facts."],
+  "alternative_interpretations": ["Elite or royal-associated burial.", "Religious-specialist or ritual-role interpretation.", "Other high-status social identities not recoverable from the evidence with certainty."],
+  "review": {"status": "canonical", "reviewed_by": "Rocksoul correlation canonicalization review", "note": "Canonical scope is the ship-burial event and archaeological context."}
+}
