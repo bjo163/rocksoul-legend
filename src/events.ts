@@ -1,4 +1,4 @@
-import { moonWitnessAssets, type MoonWitnessAssetRegistryPackId } from "@rocksoul/ui"
+import { moonWitnessAssets, type EventTopologyEdge, type EventTopologyNode, type MoonWitnessAssetRegistryPackId } from "@rocksoul/ui"
 import corpusIndex from "../data/index.json"
 import projectConfig from "../data/project.json"
 import eventTaxonomy from "../taxonomy/event-types.json"
@@ -217,6 +217,180 @@ export function getEventBundle(event: EventRecord) {
     artifacts: eventArtifacts,
     relationships: relevantRelationships,
     sources: Array.from(sourceIds).map((id) => sourceById.get(id)).filter(defined),
+  }
+}
+
+function topologyKindForReference(id: string): EventTopologyNode["kind"] {
+  if (id.startsWith("PER-")) return "person"
+  if (id.startsWith("MYTH-") || id.startsWith("CAND-") || id.startsWith("STORY-")) return "story"
+  if (id.startsWith("TXT-") || id.startsWith("RGBL-")) return "text"
+  if (id.startsWith("LAW-") || id.startsWith("AWS-")) return "law"
+  if (id.startsWith("PERS-") || id.startsWith("JIZZ-")) return "perspective"
+  if (id.startsWith("ART-")) return "artifact"
+  return "relationship"
+}
+
+export function getEventTopology(event: EventRecord) {
+  const bundle = getEventBundle(event)
+  const nodes = new Map<string, EventTopologyNode>()
+  const edges: EventTopologyEdge[] = []
+
+  const addNode = (node: EventTopologyNode) => {
+    if (!nodes.has(node.id)) nodes.set(node.id, node)
+  }
+  const addEdge = (edge: EventTopologyEdge) => {
+    if (!edges.some((item) => item.id === edge.id)) edges.push(edge)
+  }
+
+  addNode({
+    id: event.id,
+    kind: "event",
+    label: event.title,
+    detail: formatEventWindow(event),
+    status: event.historicity.status,
+    confidence: event.historicity.confidence,
+  })
+
+  bundle.places.forEach((place) => {
+    addNode({ id: place.id, kind: "place", label: place.name, detail: place.region })
+    addEdge({ id: `${event.id}:place:${place.id}`, from: event.id, to: place.id, label: "located_at" })
+    place.source_refs.forEach((sourceId) => addEdge({
+      id: `${place.id}:source:${sourceId}`,
+      from: place.id,
+      to: sourceId,
+      label: "attested_by",
+    }))
+  })
+
+  bundle.artifacts.forEach((artifact) => {
+    addNode({ id: artifact.id, kind: "artifact", label: artifact.title, detail: artifact.artifact_type })
+    addEdge({ id: `${event.id}:artifact:${artifact.id}`, from: event.id, to: artifact.id, label: "material_context" })
+    artifact.source_refs.forEach((sourceId) => addEdge({
+      id: `${artifact.id}:source:${sourceId}`,
+      from: artifact.id,
+      to: sourceId,
+      label: "attested_by",
+    }))
+  })
+
+  bundle.claims.forEach((claim) => {
+    addNode({ id: claim.id, kind: "claim", label: claim.statement, detail: claim.claim_type, status: claim.epistemic_status })
+    addEdge({ id: `${event.id}:claim:${claim.id}`, from: event.id, to: claim.id, label: "asserts", status: claim.epistemic_status })
+    claim.source_refs.forEach((sourceId) => addEdge({
+      id: `${claim.id}:source:${sourceId}`,
+      from: claim.id,
+      to: sourceId,
+      label: "cites",
+    }))
+  })
+
+  bundle.evidence.forEach((edge) => {
+    addNode({
+      id: edge.id,
+      kind: "evidence",
+      label: edge.summary,
+      detail: edge.evidence_type,
+      status: edge.relation,
+      confidence: edge.confidence,
+    })
+    addEdge({
+      id: `${edge.claim_id}:evidence:${edge.id}`,
+      from: edge.claim_id,
+      to: edge.id,
+      label: edge.relation,
+      status: edge.relation,
+      confidence: edge.confidence,
+    })
+    edge.source_refs.forEach((sourceId) => addEdge({
+      id: `${edge.id}:source:${sourceId}`,
+      from: edge.id,
+      to: sourceId,
+      label: "sourced_from",
+    }))
+  })
+
+  bundle.sources.forEach((source) => addNode({
+    id: source.id,
+    kind: "source",
+    label: source.title,
+    detail: source.quality,
+    external: true,
+  }))
+
+  event.uncertainty.forEach((item, index) => {
+    const id = `${event.id}:uncertainty:${index + 1}`
+    addNode({ id, kind: "uncertainty", label: item, status: "unresolved" })
+    addEdge({ id: `${event.id}:uncertainty-edge:${index + 1}`, from: event.id, to: id, label: "unresolved_uncertainty", status: "unresolved" })
+  })
+
+  event.alternative_interpretations.forEach((item, index) => {
+    const id = `${event.id}:alternative:${index + 1}`
+    addNode({ id, kind: "alternative", label: item, status: "unresolved" })
+    addEdge({ id: `${event.id}:alternative-edge:${index + 1}`, from: event.id, to: id, label: "alternative_interpretation", status: "unresolved" })
+  })
+
+  bundle.relationships.forEach((relationship) => {
+    const endpointIds = [relationship.subject_id, relationship.object_id]
+    endpointIds.forEach((id) => {
+      if (!nodes.has(id)) addNode({
+        id,
+        kind: topologyKindForReference(id),
+        label: id,
+        detail: relationship.note ?? undefined,
+        status: relationship.status,
+        confidence: relationship.confidence,
+        external: id !== event.id && !event.artifact_refs.includes(id),
+      })
+    })
+    addEdge({
+      id: relationship.id,
+      from: relationship.subject_id,
+      to: relationship.object_id,
+      label: relationship.relation,
+      status: relationship.status,
+      confidence: relationship.confidence,
+    })
+  })
+
+  event.narrative_links.forEach((link) => {
+    if (!nodes.has(link.narrative_id)) addNode({
+      id: link.narrative_id,
+      kind: "story",
+      label: link.narrative_id,
+      detail: link.basis.join(" · "),
+      status: link.status,
+      confidence: link.confidence,
+      external: true,
+    })
+    addEdge({
+      id: `${event.id}:narrative:${link.narrative_id}`,
+      from: event.id,
+      to: link.narrative_id,
+      label: link.relation,
+      status: link.status,
+      confidence: link.confidence,
+    })
+  })
+
+  return { nodes: Array.from(nodes.values()), edges }
+}
+
+export function corpusEventTypeCounts() {
+  return Array.from(new Set(events.map((event) => event.event_type)))
+    .map((eventType) => ({
+      id: eventType,
+      label: eventTypeLabel[eventType] ?? eventType.replaceAll("_", " "),
+      count: events.filter((event) => event.event_type === eventType).length,
+    }))
+    .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label))
+}
+
+export function corpusConfidenceRange() {
+  const values = events.map((event) => event.historicity.confidence)
+  return {
+    min: Math.min(...values),
+    max: Math.max(...values),
+    average: values.reduce((sum, value) => sum + value, 0) / Math.max(1, values.length),
   }
 }
 
