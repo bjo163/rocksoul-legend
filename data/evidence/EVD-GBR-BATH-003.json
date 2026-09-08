@@ -1,0 +1,10 @@
+{
+  "id": "EVD-GBR-BATH-003",
+  "claim_id": "CLM-GBR-BATH-003",
+  "relation": "contextualizes",
+  "evidence_type": "institutional",
+  "summary": "The Roman Baths describes the texts as personal or private prayers and notes that many concern perceived injustice.",
+  "source_refs": ["SRC-GBR-BATH-ROMAN-BATHS-CURSE-TABLETS"],
+  "confidence": 0.95,
+  "limitations": ["A collection-level description cannot replace inscription-level interpretation of every tablet."]
+}
