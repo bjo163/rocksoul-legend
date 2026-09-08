@@ -1,0 +1,9 @@
+{
+  "id": "CLM-GBR-LINDOW-002",
+  "subject_id": "EVT-LINDOW-MAN-IRON-AGE",
+  "statement": "The British Museum review reports a broad radiocarbon range spanning approximately 2 BCE to 119 CE.",
+  "claim_type": "date",
+  "epistemic_status": "supported_as_material_attestation",
+  "source_refs": ["SRC-GBR-LINDOW-BRITISH-MUSEUM-REVIEW"],
+  "notes": ["LEGEND retains the broad range instead of forcing a single exact year."]
+}
