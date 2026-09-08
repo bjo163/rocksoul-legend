@@ -1,0 +1,20 @@
+{
+  "id": "ART-GBR-BATH-CURSE-TABLET-CORPUS",
+  "title": "Bath inscribed tablet corpus",
+  "artifact_type": "inscription",
+  "culture": "Roman Britain",
+  "date": {
+    "label": "2nd century CE to late 4th century CE",
+    "precision": "range"
+  },
+  "discovery": {
+    "year": null,
+    "place_id": "PLC-GBR-BATH-AQUAE-SULIS",
+    "note": "Recovered archaeologically from the Sacred Spring context at the Roman Baths."
+  },
+  "repository": "Roman Baths, Bath",
+  "registration": null,
+  "summary": "A corpus of roughly 130 inscribed lead or pewter tablets, many framed as private prayers concerning perceived injustice or restitution.",
+  "source_refs": ["SRC-GBR-BATH-ROMAN-BATHS-CURSE-TABLETS"],
+  "uncertainty": ["The modern label 'curse tablet' does not fully describe the intent of every inscription."]
+}
