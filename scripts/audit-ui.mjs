@@ -20,7 +20,9 @@ if(/raw\.githubusercontent\.com\/bjo163\/rocksoul-assets\/main/.test(app+eventsS
 if(/blob\/dev\/data\//.test(app+eventsSource)) fail("production provenance points to dev")
 if(!/^github:bjo163\/rocksoul-ui#[0-9a-f]{40}$/.test(String(pkg.dependencies["@rocksoul/ui"]))) fail("@rocksoul/ui must be pinned to an immutable reviewed commit")
 if(!app.includes("aria-pressed")) fail("filter/selection state is not exposed semantically")
-if(!project.repository || !project.production_origin || !project.default_ref) fail("project deployment/repository contract incomplete")\nif(!project.ui?.navigation?.length || !project.ui?.hero || !project.ui?.principles?.length || !project.ui?.method_chain?.length) fail("project-driven presentation contract incomplete")\nfor(const visual of ["hero","method_timeline","method_matrix","event_topology","historicity_band","place_material","cross_domain"]){ if(!project.visual_assets?.[visual]?.pack || !project.visual_assets?.[visual]?.asset_id) fail("missing configured visual asset: "+visual) }
+if(!project.repository || !project.production_origin || !project.default_ref) fail("project deployment/repository contract incomplete")
+if(!project.ui?.navigation?.length || !project.ui?.hero || !project.ui?.principles?.length || !project.ui?.method_chain?.length) fail("project-driven presentation contract incomplete")
+for(const visual of ["hero","method_timeline","method_matrix","event_topology","historicity_band","place_material","cross_domain"]){ if(!project.visual_assets?.[visual]?.pack || !project.visual_assets?.[visual]?.asset_id) fail("missing configured visual asset: "+visual) }
 if(eventsSource.includes("github.com/bjo163/rocksoul-legend")) fail("repository URL must derive from data/project.json")
 if(!eventsSource.includes("eventTaxonomy.types.map")) fail("event type labels must derive from taxonomy")
 if(!taxonomy.types?.length) fail("event taxonomy is empty")
@@ -35,6 +37,10 @@ for(const file of fs.readdirSync(eventDir).filter(x=>x.endsWith(".json"))){
   if(!event.source_refs?.length) fail(event.id+" has no source provenance")
   if(!event.place_refs?.length) fail(event.id+" has no place context")
 }
-if(!eventsSource.includes("eventSearchText") || !eventsSource.includes("bundle.claims") || !eventsSource.includes("bundle.evidence") || !eventsSource.includes("bundle.sources")) fail("full-corpus search projection is incomplete")\nif(!eventsSource.includes("getEventTopology") || !eventsSource.includes('kind: "uncertainty"') || !eventsSource.includes('kind: "alternative"')) fail("complete EVENT topology projection is missing")\nif(app.includes("function statusVariant")) fail("consumer status mapping duplicates canonical Rocksoul status semantics")\nif(!app.includes("CANONICAL EVENT FIELD INSPECTOR")) fail("full canonical field inspector missing")\nif(!app.includes("project.ui.navigation") || !app.includes("project.ui.principles") || !app.includes("project.ui.method_chain")) fail("presentation still bypasses project-driven configuration")
+if(!eventsSource.includes("eventSearchText") || !eventsSource.includes("bundle.claims") || !eventsSource.includes("bundle.evidence") || !eventsSource.includes("bundle.sources")) fail("full-corpus search projection is incomplete")
+if(!eventsSource.includes("getEventTopology") || !eventsSource.includes('kind: "uncertainty"') || !eventsSource.includes('kind: "alternative"')) fail("complete EVENT topology projection is missing")
+if(app.includes("function statusVariant")) fail("consumer status mapping duplicates canonical Rocksoul status semantics")
+if(!app.includes("CANONICAL EVENT FIELD INSPECTOR")) fail("full canonical field inspector missing")
+if(!app.includes("project.ui.navigation") || !app.includes("project.ui.principles") || !app.includes("project.ui.method_chain")) fail("presentation still bypasses project-driven configuration")
 
 if(!process.exitCode) console.log("LEGEND UI + accessibility contract audit OK")
