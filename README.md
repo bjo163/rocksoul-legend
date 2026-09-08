@@ -214,6 +214,19 @@ SMALL-SCALE RITUAL OFFERINGS        strongly supported
 
 The important result is not a yes/no verdict: **archaeology supports ritual offering activity, while the spectacular investiture narrative remains separately modeled as disputed.**
 
+## Public observatory completeness
+
+The UI is now generated from canonical repository data rather than a parallel presentation model:
+
+- corpus overview derives event/source/claim/evidence/place/artifact/relationship totals from `data/index.json`;
+- search spans event metadata plus claims, evidence, sources, places, artifacts, uncertainty, alternatives, and relationships;
+- each dossier renders a live EVENT topology with a text equivalent;
+- historicity, evidence, narrative, and relationship confidence are visualized semantically;
+- every source reference is connected into provenance;
+- every subordinate record can expose its complete canonical fields;
+- Rocksoul visual references are resolved through the pinned `@rocksoul/ui` asset registry;
+- static event permalinks, sitemap, robots, canonical and social metadata are generated at build time from `data/project.json`.
+
 ## Research principles
 
 **EVIDENCE BEFORE INTERPRETATION.**  
@@ -230,8 +243,10 @@ rocksoul-legend/
 ├── data/            canonical events + graph objects
 ├── docs/            method, interoperability, cases, roadmap
 ├── schemas/         machine-valid contracts
-├── scripts/         validation and integrity checks
-└── .github/         CI and repository automation
+├── src/             React/Vite read-only Event Observatory
+├── scripts/         validation, UI audits, SEO/permalink generation
+├── package-lock.json reproducible dependency graph
+└── .github/         CI, browser smoke, accessibility and branch policy
 ```
 
 ## Documentation
