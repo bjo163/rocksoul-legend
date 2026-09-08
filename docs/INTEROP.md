@@ -1,13 +1,17 @@
 # Rocksoul Research Interoperability
 
-## Three-domain model
+## Research-domain model
 
 ```text
-MFTL      STORY      What was told?
-LEGEND    EVENT      What happened?
-SUPERHERO PERSON     Who was involved?
-RGBL      TEXT       What does the source text say?
+MFTL      STORY        What was told?
+LEGEND    EVENT        What happened?
+SUPERHERO PERSON       Who was involved?
+RGBL      TEXT         What does the source text say?
+AWS       LAW          Was it legally applicable?
+JIZZ      PERSPECTIVE  How is the record observed or framed?
 ```
+
+`rocksoul-correlation` is the separate RELATIONSHIP layer for reviewed cross-domain edges.
 
 ## Identifier grammar
 
@@ -16,7 +20,7 @@ EVT-*  event
 SRC-*  source
 CLM-*  claim
 EVD-*  evidence
-REL-*  relationship
+REL-*  LEGEND-local relationship
 PLC-*  place reference
 ART-*  artifact reference
 PER-*  person reference owned by SUPERHERO
@@ -55,7 +59,8 @@ Do not copy the full foreign object. Store a stable reference plus an evidence-b
 - **What happened?** → LEGEND.
 - **Who acted, witnessed, recorded, translated, transmitted, interpreted, or disputed it?** → SUPERHERO.
 - **What does the exact scripture/source passage say?** → RGBL.
-
+- **Was it legally applicable?** → AWS.
+- **How is the record observed, framed, or situated?** → JIZZ.
 
 ## First live cross-repository link
 
@@ -72,7 +77,6 @@ through:
 `REL-COL-GUATAVITA-MFTL-CAND-000001`
 
 The relation is `associated_with`, not `origin_of`. A canonical `MYTH-*` link remains a later milestone after the MFTL candidate itself is reviewed and promoted.
-
 
 ## SUPERHERO integration
 
@@ -102,6 +106,10 @@ For explicit cross-repository notation, the ecosystem may qualify the owner:
 mftl:MYTH-...
 legend:EVT-...
 superhero:PER-...
+rgbl:mw:...
+aws:LAW-...
+jizz:PERSP-...
+correlation:CORR-...
 ```
 
 No migration of existing LEGEND IDs is required.
@@ -110,8 +118,7 @@ The existing relationship `REL-COL-GUATAVITA-MFTL-CAND-000001` intentionally pre
 
 ## Validation boundary
 
-LEGEND validates local graph integrity and recognizes external namespaces, but does not remotely dereference every MFTL/SUPERHERO target during each CI run. Cross-repository existence is verified during research/audit so repository builds remain independent.
-
+LEGEND validates local graph integrity and recognizes external namespaces, but does not remotely dereference every foreign target during each CI run. Cross-repository existence is verified during research/audit so repository builds remain independent.
 
 ## RGBL integration
 
@@ -136,7 +143,6 @@ rgbl:mw:passage:...
 
 without renaming RGBL's native `mw:*` IDs.
 
-
 ## Artifact / place / text overlap
 
 The same physical or documentary referent may appear in more than one repository for different purposes.
@@ -158,26 +164,9 @@ Do not auto-merge these records from title, shelfmark, or name similarity. Cross
 
 Likewise, an RGBL passage reporting an event is textual evidence; LEGEND still owns the historical-event assessment.
 
+## AWS boundary
 
-## Fifth research domain — AWS
-
-`rocksoul-aws` owns **LAW / applicability / legal assessment**.
-
-```text
-MFTL       STORY       What was told?
-LEGEND     EVENT       What happened?
-SUPERHERO  PERSON      Who was involved?
-RGBL       TEXT        What does the exact source text say?
-AWS        LAW         Was it allowed / legally applicable?
-```
-
-Public research grammar:
-
-```text
-STORY × EVENT × PERSON × RGBL × AWS
-```
-
-AWS may reference records owned by the first four repositories, but it stores them as foreign references and must not copy their canonical ownership into the legal domain.
+`rocksoul-aws` owns **LAW / applicability / legal assessment**. AWS may reference LEGEND events as foreign records; a legal conclusion never becomes the historical-event verdict.
 
 ```text
 FOREIGN REFERENCE ≠ OWNERSHIP
@@ -185,4 +174,27 @@ LEGAL APPLICABILITY ≠ HISTORICAL FACT
 LEGAL RESULT ≠ MIZAN
 ```
 
-The first five-domain proof remains Jerusalem 70 CE. The historical/textual four-way chain stays intact; AWS adds a separate applicability analysis.
+## JIZZ boundary
+
+`rocksoul-jizz` owns **PERSPECTIVE** records. A perspective can observe or frame an EVENT, but it cannot mutate the canonical LEGEND event record or its historicity assessment.
+
+```text
+legend:EVT-...
+        ↓ observed / framed by
+jizz:PERSP-...
+```
+
+`PERSPECTIVE ≠ EVENT` and `PERSPECTIVE ≠ HISTORICITY`.
+
+## LEGEND relationships vs global Correlation
+
+LEGEND `REL-*` records are event-local graph objects required to preserve EVENT evidence/context. They remain canonical **inside LEGEND only**.
+
+Reviewed cross-domain relationship semantics, explainability, freshness and targeted re-analysis belong to `rocksoul-correlation`:
+
+```text
+LEGEND REL-*                  local EVENT graph integrity
+rocksoul-correlation CORR-*   reviewed ecosystem relationship
+```
+
+A LEGEND `REL-*` object must not be advertised as the global cross-domain relationship owner, and Correlation must not copy or replace the underlying LEGEND EVENT record.
