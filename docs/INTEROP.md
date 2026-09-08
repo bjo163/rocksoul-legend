@@ -157,3 +157,32 @@ MFTL object/entity
 Do not auto-merge these records from title, shelfmark, or name similarity. Crosswalk them explicitly when evidence establishes that they refer to the same underlying artifact.
 
 Likewise, an RGBL passage reporting an event is textual evidence; LEGEND still owns the historical-event assessment.
+
+
+## Fifth research domain — AWS
+
+`rocksoul-aws` owns **LAW / applicability / legal assessment**.
+
+```text
+MFTL       STORY       What was told?
+LEGEND     EVENT       What happened?
+SUPERHERO  PERSON      Who was involved?
+RGBL       TEXT        What does the exact source text say?
+AWS        LAW         Was it allowed / legally applicable?
+```
+
+Public research grammar:
+
+```text
+STORY × EVENT × PERSON × RGBL × AWS
+```
+
+AWS may reference records owned by the first four repositories, but it stores them as foreign references and must not copy their canonical ownership into the legal domain.
+
+```text
+FOREIGN REFERENCE ≠ OWNERSHIP
+LEGAL APPLICABILITY ≠ HISTORICAL FACT
+LEGAL RESULT ≠ MIZAN
+```
+
+The first five-domain proof remains Jerusalem 70 CE. The historical/textual four-way chain stays intact; AWS adds a separate applicability analysis.
