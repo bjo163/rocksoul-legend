@@ -1,0 +1,20 @@
+{
+  "id": "ART-NOR-OSEBERG-SHIP",
+  "title": "Oseberg ship and burial assemblage",
+  "artifact_type": "other",
+  "culture": "Viking Age Norway",
+  "date": {
+    "label": "Ship built before its use in the 834 CE burial",
+    "precision": "period"
+  },
+  "discovery": {
+    "year": 1904,
+    "place_id": "PLC-NOR-OSEBERG-TONSBERG",
+    "note": "Excavation of the Oseberg mound exposed the ship, two women, and extensive grave goods."
+  },
+  "repository": null,
+  "registration": null,
+  "summary": "The ship and associated grave goods form the material core of the Oseberg burial context.",
+  "source_refs": ["SRC-NOR-OSEBERG-VIKING-HERITAGE"],
+  "uncertainty": ["The material assemblage does not by itself establish the two women's exact identities or specific cultic roles."]
+}
