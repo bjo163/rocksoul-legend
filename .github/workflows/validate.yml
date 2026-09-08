@@ -2,9 +2,13 @@ name: Validate LEGEND
 
 on:
   push:
-    branches: [main, dev]
+    branches: [main]
   pull_request:
     branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   validate:
@@ -33,3 +37,20 @@ jobs:
       - name: Axe accessibility gate
         run: |
           npx axe http://127.0.0.1:4173/ http://127.0.0.1:4173/events/EVT-JERUSALEM-SECOND-TEMPLE-DESTRUCTION-70/ --exit --chrome-options=no-sandbox,disable-dev-shm-usage
+      - name: Enforce main-only remote branch
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t branches < <(
+            git ls-remote --heads origin | awk '{sub("refs/heads/", "", $2); print $2}' | sort
+          )
+          for branch in "${branches[@]}"; do
+            if [ "$branch" != "main" ]; then
+              echo "Deleting noncanonical remote branch: $branch"
+              git push origin --delete "$branch"
+            fi
+          done
+          remaining=$(git ls-remote --heads origin | awk '{sub("refs/heads/", "", $2); print $2}' | sort)
+          printf 'Remaining branches:\n%s\n' "$remaining"
+          test "$remaining" = "main"
