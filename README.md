@@ -25,7 +25,7 @@ A provenance-first **Historical & Event Intelligence** repository for reconstruc
 
 <br/>
 
-[Architecture](#event-intelligence-graph) · [Canonical cases](#canonical-event-set) · [Shared proof](#shared-five-domain-proof) · [Documentation](#documentation) · [Assets](https://github.com/bjo163/rocksoul-assets) · [Console](https://github.com/bjo163/rocksoul-crayon)
+[Live Explorer](https://rocksoul-legend.vercel.app) · [Architecture](#event-intelligence-graph) · [Canonical cases](#canonical-event-set) · [Shared proof](#shared-five-domain-proof) · [Documentation](#documentation) · [Assets](https://github.com/bjo163/rocksoul-assets) · [Console](https://github.com/bjo163/rocksoul-crayon)
 
 </div>
 
@@ -175,14 +175,16 @@ LEGEND's foundation has been tested across multiple evidence patterns:
 Current canonical graph:
 
 ```text
-4 events
-4 places
-1 artifact
-15 sources
-19 claims
-21 evidence edges
+7 events
+7 places
+4 artifacts
+18 sources
+28 claims
+30 evidence edges
 4 relationships
 ```
+
+The public read-only explorer is deployed at **https://rocksoul-legend.vercel.app**. It is a projection of canonical repository data, not a second source of truth. Event permalinks are generated at build time under `/events/EVT-*`.
 
 The validator checks both **JSON shape** and **semantic graph references**. Missing local sources, claims, evidence, places, artifacts, or broken local relationship endpoints fail CI.
 
@@ -241,6 +243,7 @@ rocksoul-legend/
 | [Interoperability](docs/INTEROP.md) | Cross-repository ownership and references |
 | [Research Policy](docs/RESEARCH_POLICY.md) | Evidence, uncertainty, and provenance rules |
 | [Roadmap](docs/ROADMAP.md) | Current milestones and bounded next steps |
+| [UI Contract](docs/UI.md) | Public explorer, Rocksoul UI/assets consumption, routing, accessibility, and deployment boundaries |
 | [Jerusalem 70 CE](docs/cases/JERUSALEM-70-TEMPLE.md) | Shared four-way proof case |
 
 ---
