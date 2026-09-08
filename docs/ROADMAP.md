@@ -1,42 +1,38 @@
 # LEGEND Roadmap
 
-## v0.1 — Mature Foundation
+## v0.1 — Mature Event Foundation
 
 - [x] Event ownership rule
 - [x] Event/source/claim/evidence/relationship schemas
-- [x] Place and artifact registries where real data required them
-- [x] Small event-type taxonomy
-- [x] Research policy
-- [x] MFTL interoperability contract
-- [x] JSON schema validation
-- [x] Semantic graph-reference validation
-- [x] Generated corpus index
-- [x] GitHub Actions validation
-- [x] Ritual/material case — `EVT-COL-GUATAVITA-OFFERINGS`
-- [x] Natural-disaster case — `EVT-IDN-KRAKATAU-1883`
-- [x] Astronomical case — `EVT-GBR-HALLEY-1066`
-- [x] Explicit counterevidence / alternative-explanation modeling
-- [x] First cross-repository MFTL research relationship
+- [x] Place and artifact registries
+- [x] Research policy and interoperability contract
+- [x] JSON schema + semantic graph validation
+- [x] Generated corpus index and GitHub Actions validation
+- [x] Canonical evidence patterns for ritual, natural-disaster, astronomical, and conflict events
 
-## Maturity gate
+## v0.2 — Cross-domain proof
 
-```text
-3 DIFFERENT EVENT CLASSES
-+ SOURCE TRACEABLE
-+ UNCERTAINTY EXPLICIT
-+ SHAPE VALID
-+ GRAPH VALID
-+ CI GREEN
-= LEGEND v0.1 MATURE
-```
+- [x] Jerusalem 70 CE five-domain integration
+- [x] MFTL narrative relationships
+- [x] SUPERHERO person-side relationship
+- [x] Correlation boundaries remain explicit: association is not origin
 
-## Later, not a blocker
+## v0.3 — Public read-only event observatory
 
-- [ ] First canonical `MYTH-*` narrative relationship after the linked MFTL candidate is independently promoted.
-- [ ] Additional events only when they test a genuinely new evidence pattern or serve real research work.
+- [x] React 19 + Vite public explorer
+- [x] Canonical `@rocksoul/ui` composition
+- [x] Pinned Rocksoul asset registry; no runtime tracking of `rocksoul-assets/main`
+- [x] Search across events, claims, evidence, sources, places, artifacts, and relationships
+- [x] Full claim/evidence/source dossier projection
+- [x] Place and material-record projection
+- [x] Relationship/cross-domain projection
+- [x] Stable event permalinks with generated SEO metadata
+- [x] 44px touch targets, semantic selection state, skip navigation, reduced motion
+- [x] UI contract audit, browser smoke, and axe accessibility CI gate
+- [x] Bath, Lindow Man, and Oseberg upgraded from source-only records to explicit claim/evidence/place/artifact graphs
 
-## Stop rule
+## Boundary
 
-Do **not** expand the foundation with UI, database, backend, automation, scoring, or broad new taxonomies just to make the repository larger.
+The UI is a **read-only projection** of repository-owned EVENT intelligence. It does not introduce a database, mutate canonical research state, duplicate foreign domain objects, or turn LEGEND into an operational console. `rocksoul-crayon` remains the authenticated cross-resource console.
 
-SUPERHERO now owns person/actor/transmission intelligence. LEGEND remains frozen at the event layer; future cross-repo work should add evidence-backed references rather than expanding LEGEND into biography or narrative ownership.
+Future events should be added only when they serve real research work or test a genuinely new evidence pattern. New presentation primitives belong in `rocksoul-ui`; new visual sources belong in `rocksoul-assets`.
