@@ -6,9 +6,22 @@
 
 ### **TRACE THE EVENT.**
 
-A provenance-first **Historical & Event Intelligence** repository for tracing real-world events, material evidence, documentary attestation, uncertainty, and their possible relationship to later narratives.
+#### EVIDENCE · HISTORY · UNCERTAINTY · CONTEXT
 
-**ROCKSOUL RESEARCH · STORY × EVENT × PERSON × TEXT**
+A provenance-first **Historical & Event Intelligence** repository for reconstructing real-world events, material evidence, documentary attestation, uncertainty, and defensible links to later narratives.
+
+**MOONWITNESS · ROCKSOUL RESEARCH · STORY × EVENT × PERSON × TEXT × LAW**
+
+<br/>
+
+[![Validation](https://github.com/bjo163/rocksoul-legend/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/bjo163/rocksoul-legend/actions/workflows/validate.yml)
+![Branch](https://img.shields.io/badge/branch-main-111111)
+![Domain](https://img.shields.io/badge/domain-EVENT-6F6F6F)
+![Method](https://img.shields.io/badge/method-provenance--first-B43A32)
+
+<br/>
+
+[Architecture](#event-intelligence-graph) · [Canonical cases](#canonical-event-set) · [Shared proof](#four-way-proof-case) · [Documentation](#documentation)
 
 </div>
 
@@ -43,41 +56,52 @@ IS there a defensible connection to a later narrative?
 
 A historical event plus a similar narrative does not prove that the event caused the narrative.
 
-```text
-EVENT
-  ↓
-SOURCE + EVIDENCE
-  ↓
-HISTORICITY
-  ↓
-UNCERTAINTY
-  ↓
-POSSIBLE NARRATIVE CONNECTION
+## Event intelligence graph
+
+```mermaid
+flowchart LR
+    A["EVENT"] --> B["PLACE + TIME"]
+    A --> C["SOURCE"]
+    A --> D["MATERIAL / DOCUMENTARY EVIDENCE"]
+    C --> E["CLAIMS"]
+    D --> E
+    E --> F["SUPPORT"]
+    E --> G["COUNTEREVIDENCE"]
+    E --> H["ALTERNATIVE EXPLANATION"]
+    F --> I["HISTORICITY"]
+    G --> I
+    H --> I
+    I --> J["UNCERTAINTY"]
+    J --> K["POSSIBLE NARRATIVE CONNECTION"]
 ```
 
-## Rocksoul Research ecosystem
+<div align="center">
 
-| Repository | Domain | Question | Mantra |
+### **EVENT ≠ INTERPRETATION**
+
+</div>
+
+## MoonWitness / Rocksoul research map
+
+| Repository | Domain | Core question | Mantra |
 |---|---|---|---|
-| **rocksoul-mftl** | Narrative Intelligence | What was told? | TRACE THE STORY. |
-| **rocksoul-legend** | Historical & Event Intelligence | What happened? | TRACE THE EVENT. |
-| **rocksoul-superhero** | Actor & Transmission Intelligence | Who was involved? | TRACE THE PERSON. |
-| **rocksoul-rgbl** | Scripture & Revelation Reference | What does the source text say? | TRACE THE TEXT. |
-
-**LEGEND owns EVENT**. MFTL owns narrative records. SUPERHERO owns person / actor / transmission records. RGBL owns exact scripture/text corpus identity, passages, and provenance.
-
-## Ownership rule
+| [`rocksoul-mftl`](https://github.com/bjo163/rocksoul-mftl) | STORY | What was told? | TRACE THE STORY. |
+| **`rocksoul-legend`** | EVENT | What happened? | TRACE THE EVENT. |
+| [`rocksoul-superhero`](https://github.com/bjo163/rocksoul-superhero) | PERSON | Who was involved? | TRACE THE PERSON. |
+| [`rocksoul-rgbl`](https://github.com/bjo163/rocksoul-rgbl) | TEXT | What does the exact text say? | TRACE THE TEXT. |
+| [`rocksoul-aws`](https://github.com/bjo163/rocksoul-aws) | LAW | Was it allowed? | TRACE THE LAW. |
 
 ```text
-What was told?          → MFTL
-What happened?          → LEGEND
-Who was involved?       → SUPERHERO
-What does the text say? → RGBL
+STORY   → MFTL
+EVENT   → LEGEND
+PERSON  → SUPERHERO
+TEXT    → RGBL
+LAW     → AWS
 ```
 
-Shared primitives such as sources, claims, evidence, places, artifacts, and relationships remain interoperable concepts rather than separate repositories.
+**LEGEND owns canonical EVENT records.** Shared primitives such as sources, claims, evidence, places, artifacts, and relationships remain interoperable concepts rather than separate domains.
 
-SUPERHERO now provides the human-agency side of the graph. For example, `PER-COL-JUAN-RODRIGUEZ-FREYLE` links the Guatavita event to a later colonial recorder/transmission chain without changing LEGEND's ownership of the event itself.
+[Read the interoperability contract →](docs/INTEROP.md)
 
 ## Four-way proof case
 
@@ -97,20 +121,30 @@ LEGEND contributes only the independently evidenced **historical event**. It doe
 
 [Read the shared case →](docs/cases/JERUSALEM-70-TEMPLE.md)
 
-## v0.1 maturity
+## Canonical event set
 
-LEGEND is intentionally small, but the core EVENT model has now been tested across four different evidence patterns:
+LEGEND's foundation has been tested across multiple evidence patterns:
 
 | Case | Event class | Evidence pattern | Result |
 |---|---|---|---|
-| **Guatavita** | ritual event | archaeology + artifact + colonial text | canonical, with explicit counterevidence |
-| **Krakatau 1883** | natural disaster | geology + tsunami + modern institutional record | canonical |
+| **Guatavita** | ritual event | archaeology + artifact + colonial text | canonical, explicit counterevidence |
+| **Krakatau 1883** | natural disaster | geology + tsunami + institutional record | canonical |
 | **Halley 1066** | astronomical event | astronomy + museum/documentary record | canonical |
 | **Jerusalem 70 CE** | war/conflict | near-contemporary history + museum synthesis + text comparison | canonical, four-way integration |
 
-The validator checks both **JSON shape** and **semantic graph references**. Missing local sources, claims, evidence, places, artifacts, or broken local relationship endpoints fail CI.
+Current canonical graph:
 
-The first integration case was **Guatavita / El Dorado**, chosen because MFTL already had a related research lead and the case combines ritual tradition, documentary evidence, place, artifact, counterevidence, and later narrative development.
+```text
+4 events
+4 places
+1 artifact
+15 sources
+19 claims
+21 evidence edges
+4 relationships
+```
+
+The validator checks both **JSON shape** and **semantic graph references**. Missing local sources, claims, evidence, places, artifacts, or broken local relationship endpoints fail CI.
 
 ## First canonical event
 
@@ -136,60 +170,49 @@ SMALL-SCALE RITUAL OFFERINGS        strongly supported
                                     ≠ proven single origin
 ```
 
-Current canonical graph:
-
-```text
-4 events
-4 places
-1 artifact
-15 sources
-19 claims
-21 evidence edges
-4 relationships
-```
-
-The most important result is not a yes/no verdict: **archaeology supports ritual offering activity, while the spectacular investiture narrative remains separately modeled as disputed.**
-
-[Read the canonical event →](data/events/EVT-COL-GUATAVITA-OFFERINGS.json) ·
-[Read interoperability →](docs/INTEROP.md)
-
-## Generalization cases
-
-### Krakatau 1883
-
-`EVT-IDN-KRAKATAU-1883`
-
-Tests **natural-science evidence** and separates direct tsunami effects from some remote water-level signals better explained through atmosphere–ocean coupling.
-
-### Halley 1066
-
-`EVT-GBR-HALLEY-1066`
-
-Tests **astronomical + documentary evidence** and separates the observed comet apparition from later omen interpretation.
-
-```text
-RITUAL / MATERIAL        ✅
-NATURAL SCIENCE          ✅
-ASTRONOMICAL / DOCUMENT  ✅
-SCHEMA VALIDATION        ✅
-GRAPH VALIDATION         ✅
-CI                       ✅
-```
-
-**LEGEND v0.1 is mature enough to stop expanding the foundation.**
+The important result is not a yes/no verdict: **archaeology supports ritual offering activity, while the spectacular investiture narrative remains separately modeled as disputed.**
 
 ## Research principles
 
-**EVIDENCE BEFORE INTERPRETATION.**
-
-**CORRELATION IS NOT CAUSATION.**
-
-**SIMILARITY IS NOT TRANSMISSION.**
-
-**LATER SOURCE IS NOT CONTEMPORARY EVIDENCE.**
-
-**TRADITION IS EVIDENCE OF TRADITION, NOT AUTOMATIC EVIDENCE OF THE EVENT.**
-
+**EVIDENCE BEFORE INTERPRETATION.**  
+**CORRELATION IS NOT CAUSATION.**  
+**SIMILARITY IS NOT TRANSMISSION.**  
+**LATER SOURCE IS NOT CONTEMPORARY EVIDENCE.**  
+**TRADITION IS EVIDENCE OF TRADITION, NOT AUTOMATIC EVIDENCE OF THE EVENT.**  
 **UNCERTAINTY IS DATA.**
 
-See [docs/INDEX.md](docs/INDEX.md) after the foundation scaffold is installed.
+## Repository atlas
+
+```text
+rocksoul-legend/
+├── data/            canonical events + graph objects
+├── docs/            method, interoperability, cases, roadmap
+├── schemas/         machine-valid contracts
+├── scripts/         validation and integrity checks
+└── .github/         CI and repository automation
+```
+
+## Documentation
+
+| Document | Purpose |
+|---|---|
+| [Documentation Index](docs/INDEX.md) | Entry point to project documentation |
+| [Data Model](docs/DATA_MODEL.md) | Event and graph semantics |
+| [Interoperability](docs/INTEROP.md) | Cross-repository ownership and references |
+| [Research Policy](docs/RESEARCH_POLICY.md) | Evidence, uncertainty, and provenance rules |
+| [Roadmap](docs/ROADMAP.md) | Current milestones and bounded next steps |
+| [Jerusalem 70 CE](docs/cases/JERUSALEM-70-TEMPLE.md) | Shared four-way proof case |
+
+---
+
+<div align="center">
+
+## **TRACE THE EVENT.**
+
+### **SOURCE · EVIDENCE · HISTORICITY · UNCERTAINTY**
+
+**Reality first. Interpretation second. Provenance always.**
+
+`LEGEND / MoonWitness · Rocksoul Research`
+
+</div>
