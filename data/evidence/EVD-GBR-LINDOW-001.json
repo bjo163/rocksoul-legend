@@ -1,0 +1,10 @@
+{
+  "id": "EVD-GBR-LINDOW-001",
+  "claim_id": "CLM-GBR-LINDOW-001",
+  "relation": "supports",
+  "evidence_type": "forensic",
+  "summary": "The British Museum review synthesizes the physical investigation of injuries and the bog-body depositional context.",
+  "source_refs": ["SRC-GBR-LINDOW-BRITISH-MUSEUM-REVIEW"],
+  "confidence": 0.95,
+  "limitations": ["The exact sequence of injuries has been debated."]
+}
