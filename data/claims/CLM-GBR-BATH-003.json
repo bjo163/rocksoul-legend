@@ -1,0 +1,9 @@
+{
+  "id": "CLM-GBR-BATH-003",
+  "subject_id": "EVT-BATH-CURSE-TABLETS",
+  "statement": "The institutional description characterizes the tablets as personal or private prayers, many concerning perceived injustice, so the modern label 'curse tablet' is not a complete account of every motive.",
+  "claim_type": "interpretation",
+  "epistemic_status": "supported_as_documentary_attestation",
+  "source_refs": ["SRC-GBR-BATH-ROMAN-BATHS-CURSE-TABLETS"],
+  "notes": ["Individual inscriptions still require inscription-level interpretation."]
+}
