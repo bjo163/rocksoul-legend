@@ -20,6 +20,10 @@ Current canonical UI primitives include:
 
 - `DossierHeader`
 - `EvidenceMatrix`
+- `EventTopologyGraph`
+- `HistoricityBand`
+- `ConfidenceMeter`
+- `RecordFieldGrid`
 - `ProvenanceRail`
 - `ObservatorySectionNav`
 - `ThemeToggle`
@@ -36,7 +40,9 @@ Each event page exposes:
 5. place and artifact records;
 6. local and foreign relationships;
 7. uncertainty and alternative interpretations;
-8. narrative links with correlation/origin boundaries.
+8. narrative links with their basis, counterpoints, confidence, and correlation/origin boundaries;
+9. a live topology containing every canonical claim, evidence record, source reference, place, artifact, uncertainty, alternative interpretation, and relevant relationship;
+10. a canonical field inspector so no EVENT field is silently dropped by presentation.
 
 Search uses the same canonical graph projection rather than only event titles.
 
@@ -48,7 +54,7 @@ Canonical public route:
 /events/EVT-*
 ```
 
-The production build generates a static HTML entry for every canonical event with event-specific title, description, canonical URL, and Open Graph metadata. React then hydrates the same route and keeps navigation shareable with History API state.
+The production build generates a static HTML entry for every canonical event with event-specific title, description, canonical URL, Open Graph/Twitter metadata, `sitemap.xml`, and `robots.txt`. The canonical origin is resolved from `data/project.json`; it is not duplicated in build code. React then hydrates the same route, updates client-side share metadata during navigation, and keeps History API state shareable.
 
 ## Accessibility
 
@@ -60,6 +66,8 @@ The consumer contract requires:
 - semantic `aria-pressed` state for event/filter selection;
 - reduced-motion support;
 - graph text equivalents;
+- semantic confidence meters and historicity progress;
+- reduced-motion-aware dossier navigation;
 - status text in addition to color;
 - automated axe checks on root and representative event permalink.
 
