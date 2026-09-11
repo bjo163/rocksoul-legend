@@ -11,14 +11,15 @@
   "scripts": {
     "dev": "vite",
     "preview": "vite preview",
-    "validate": "node scripts/validate.mjs",
+    "validate": "node scripts/validate.mjs && node scripts/validate-research-steward.mjs",
     "index": "node scripts/build-index.mjs",
     "audit:ui": "node scripts/audit-ui.mjs",
     "typecheck": "tsc --noEmit",
     "build:data": "npm run validate && npm run index",
     "build:web": "vite build && node scripts/build-event-pages.mjs",
     "build": "npm run build:data && npm run audit:ui && npm run typecheck && npm run build:web",
-    "ci": "npm run build"
+    "ci": "npm run build",
+    "research:steward": "node scripts/research-steward.mjs"
   },
   "dependencies": {
     "@rocksoul/ui": "github:bjo163/rocksoul-ui#6a98ce0d5f5be60d4744f073837cd754639ea044",
